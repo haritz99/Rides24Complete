@@ -1,0 +1,3 @@
+gui.EzabatuGUI#instance-init#
+java.text.DecimalFormat#instance-init#
+java.text.DecimalFormat#<init>(Ljava/lang/String;)V

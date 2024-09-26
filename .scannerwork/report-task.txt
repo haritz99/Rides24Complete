@@ -1,7 +1,7 @@
-organization=jononekin
-projectKey=Bets20201
+organization=gginfor
+projectKey=gginfor_rides24complete
 serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.12534
-dashboardUrl=https://sonarcloud.io/dashboard?id=Bets20201
-ceTaskId=AXTACu1jZg8dIi10qivb
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXTACu1jZg8dIi10qivb
+serverVersion=8.0.0.56719
+dashboardUrl=https://sonarcloud.io/dashboard?id=gginfor_rides24complete
+ceTaskId=AZIe-wQtsc1e5MLHk6rc
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZIe-wQtsc1e5MLHk6rc

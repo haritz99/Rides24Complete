@@ -1,0 +1,4 @@
+businessLogic.BLFacadeImplementation#<init>()V
+null
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V

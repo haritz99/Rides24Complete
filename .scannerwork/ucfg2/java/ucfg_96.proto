@@ -1,17 +1,7 @@
 
-7configuration.ConfigXML#getPassword()Ljava/lang/String;Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java= =("1*ç
-1Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java>	 >(Ÿ
-œ
-Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java>	 >(
-%0java.lang.String"__id*)*'
-configuration.ConfigXML"
-
-password"m
-Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java> >(
-
-%0java.lang.StringB
-configuration.ConfigXML
+domain.User#getMoney()DM
+CC:/Users/Ikaslea/git/Rides24Complete/src/main/java/domain/User.javaB B("1*!
+1C	 C("
+C C(
+""B
+domain.UserHX
