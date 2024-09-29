@@ -27,6 +27,10 @@
 <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
+    <sonar.organization>haritz</sonar.organization>
+  	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  	<sonar.projectKey>haritz_ridesintegracioncontinua</sonar.projectKey>
+	<sonar.login>11e9caa68744c110cf94489bccfff8d48a515506</sonar.login>
 </properties>
 
 <!-- https://mvnrepository.com/artifact/junit/junit -->

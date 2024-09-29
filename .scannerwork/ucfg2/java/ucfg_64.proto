@@ -1,16 +1,15 @@
 
-/domain.Event#getDescription()Ljava/lang/String;F
-</Users/iturrioz/git/Bets2021/src/main/java/domain/Event.java= =("1*¾
-1F
-</Users/iturrioz/git/Bets2021/src/main/java/domain/Event.java>	 >(Œ
-‰
-F
-</Users/iturrioz/git/Bets2021/src/main/java/domain/Event.java>	 >(
-%0java.lang.String"__id*!*
-domain.Event"
-description"b
-F
-</Users/iturrioz/git/Bets2021/src/main/java/domain/Event.java> >(
+,domain.Discount#getKodea()Ljava/lang/String;N
+DC:/Users/user/git/Rides24Complete/src/main/java/domain/Discount.java ("1*›
+1	 (f
+d
+	 (
+%0java.lang.String"__id*:
+
+__unknown_file (*
+domain.Discount"
+kodea"$
+ (
 
-%0java.lang.StringB
-domain.Event
+%0java.lang.StringB
+domain.DiscountH

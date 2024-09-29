@@ -1,16 +1,16 @@
 
-5configuration.ConfigXML#getLocale()Ljava/lang/String;Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java1 1("1*Â
-1Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java2	 2(ù
-ö
-Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java2	 2(
-%0java.lang.String"__id*'*%
-configuration.ConfigXML"
-locale"m
-Q
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.java2 2(
++domain.User#getUsername()Ljava/lang/String;J
+@C:/Users/user/git/Rides24Complete/src/main/java/domain/User.java* *("1*ö
+1+	 +(e
+c
++	 +(
+%0java.lang.String"__id*9
+
+__unknown_file (*
+domain.User"
+
+username"$
++ +(
 
-%0java.lang.StringB
-configuration.ConfigXML
+%0java.lang.StringB
+domain.UserH
