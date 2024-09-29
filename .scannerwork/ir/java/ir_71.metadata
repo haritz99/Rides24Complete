@@ -1,0 +1,3 @@
+domain.Driver#<init>(Ljava/lang/String;Ljava/lang/String;)V
+==
+<init> domain.User#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

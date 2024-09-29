@@ -1,0 +1,7 @@
+gui.MainGUI#paintAgain()V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+==
+setText javax.swing.JLabel#setText(Ljava/lang/String;)V
+setText javax.swing.AbstractButton#setText(Ljava/lang/String;)V
+setTitle java.awt.Frame#setTitle(Ljava/lang/String;)V

@@ -1,0 +1,46 @@
+
+XbusinessLogic.BLFacadeImplementation#getKotxeByMatrikula(Ljava/lang/String;)Ldomain/Car;e
+YC:/Users/user/git/Rides24Complete/src/main/java/businessLogic/BLFacadeImplementation.javaÂ Â("startingBlock*Œ
+startingBlock
+Â Â(,
+Š
+
+Á Á(
+
+%0"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*6
+
+__unknown_file (
+
+matrjava.lang.StringZ
+X
+
+Â' Â(+
+matrjava.lang.String"__annotation*"
+
+__unknown_file (
+
+%0*
+1*ƒ
+1
+Ã Ã(M
+K
+
+Ä Ä(2
+kotxe
+domain.Car"__id*"
+
+__unknown_file (
+"""#
+
+Æ Æ(
+
+kotxe
+domain.Car:&
+
+Â  Â(+
+matrjava.lang.StringB(&
+$businessLogic.BLFacadeImplementationH
