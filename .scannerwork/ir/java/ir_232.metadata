@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#deleteUser(LUser;)V
+=======
+domain.Car#getDriver()LDriver;
+>>>>>>> refs/remotes/Rides24Complete/master

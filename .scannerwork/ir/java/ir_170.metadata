@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.AlertaAurkituakGUI#<init>(Ljava/lang/String;)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 javax.swing.JTable#<init>(Ljavax/swing/table/TableModel;)V
@@ -32,3 +33,9 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+=======
+businessLogic.BLFacadeImplementation#<init>()V
+null
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

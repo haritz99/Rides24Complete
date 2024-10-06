@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 gui.TravelerGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
 setVisible java.awt.Window#setVisible(Z)V
+=======
+businessLogic.BLFacadeImplementation#bookRide(Ljava/lang/String;Ldomain/Ride;ID)Z
+>>>>>>> refs/remotes/Rides24Complete/master

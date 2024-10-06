@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 domain.Complaint#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ldomain/Booking;Ljava/lang/String;Z)V
 ==
 <init> java.lang.Object#<init>()V
+=======
+configuration.ConfigXML#isBusinessLogicLocal()Z
+>>>>>>> refs/remotes/Rides24Complete/master

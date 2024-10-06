@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 gui.BaloraGUI#instance-init#
+=======
+domain.Driver#addRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IF)LRide;
+null
+>>>>>>> refs/remotes/Rides24Complete/master

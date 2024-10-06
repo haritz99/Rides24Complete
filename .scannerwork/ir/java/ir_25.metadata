@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.CreateRideGUI#setBussinessLogic(LBLFacade;)V
+=======
+gui.CreateRideGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

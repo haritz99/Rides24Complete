@@ -7,11 +7,15 @@ import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import configuration.ConfigXML;
 import domain.Driver;
 import domain.Ride;
+<<<<<<< HEAD
 import domain.Traveler;
+=======
+>>>>>>> refs/remotes/Rides24Complete/master
 import domain.User;
 
 
@@ -136,6 +140,7 @@ public class TestDataAccess {
 
 		}
 		
+<<<<<<< HEAD
 		public void addUser(User user) {
 			db.getTransaction().begin();
 			db.persist(user);
@@ -165,6 +170,91 @@ public class TestDataAccess {
 			db.getTransaction().commit();
 			}
 		}
+=======
+		public User addUser1(String username, String password, String mota) {
+			User user = null;
+			try {
+				db.getTransaction().begin();
+	            db.persist(user); // Añadir el objeto User a la base de datos
+	            db.getTransaction().commit(); 
+	            return user;// Devolver el user añadido
+	        } catch (Exception e) {
+	            if (db.getTransaction().isActive()) {
+	            	db.getTransaction().rollback(); // Revertir en caso de error
+	            }
+	            e.printStackTrace();
+	            return null;// Mostrar la excepción y devolver null
+	        } finally {
+	            db.close(); // Cerrar el EntityManager
+	        }
+		}
+		
+		public User addUserWithMoney(String username, String password, String mota, double money) {
+			System.out.println(">> TestDataAccess: addUser");
+			User user=null;
+				db.getTransaction().begin();
+				try {
+					user = new User(username, password, mota);
+					user.setMoney(money);
+					db.persist(user);
+					db.getTransaction().commit();
+				}
+				catch (Exception e){
+					e.printStackTrace();
+				}
+				return user;
+	    }
+		
+		public User addUser2(User user) {
+			
+			try {
+				db.getTransaction().begin();
+	            db.persist(user); // Añadir el objeto User a la base de datos
+	            db.getTransaction().commit(); 
+	            return user;// Devolver el user añadido
+	        } catch (Exception e) {
+	            if (db.getTransaction().isActive()) {
+	            	db.getTransaction().rollback(); // Revertir en caso de error
+	            }
+	            e.printStackTrace();
+	            return null;// Mostrar la excepción y devolver null
+	        } finally {
+	            db.close(); // Cerrar el EntityManager
+	        }
+		}
+		
+		public boolean removeUser(String name) {
+			System.out.println(">> TestDataAccess: removeUser");
+			User u = db.find(User.class, name);
+			if (u!=null) {
+				db.getTransaction().begin();
+				db.remove(u);
+				db.getTransaction().commit();
+				return true;
+			} else 
+			return false;
+	    }
+		
+		public User getUser(String username, String password, String mota) {
+			try {
+	            db.getTransaction().begin();
+	            Query query = db.createQuery("SELECT u FROM User u WHERE u.username = :username AND u.passwd = :password AND u.mota = :mota");
+	            query.setParameter("username", username);
+	            query.setParameter("password", password);
+	            query.setParameter("mota", mota);
+
+	            User user = (User) query.getSingleResult();
+	            db.getTransaction().commit();
+	            return user;
+	        } catch (Exception e) {
+	            db.getTransaction().rollback();
+	            e.printStackTrace();
+	            return null;
+	        }
+		}
+		
+
+>>>>>>> refs/remotes/Rides24Complete/master
 
 		
 }

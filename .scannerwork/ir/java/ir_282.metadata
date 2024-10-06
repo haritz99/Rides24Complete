@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Ride#getTo()Ljava/lang/String;
+=======
+domain.Alert#getAlertNumber()Ljava/lang/Integer;
+>>>>>>> refs/remotes/Rides24Complete/master

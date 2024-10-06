@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Booking#setSeats(I)V
+=======
+domain.Complaint#setNoiz(Ljava/util/Date;)V
+>>>>>>> refs/remotes/Rides24Complete/master

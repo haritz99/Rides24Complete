@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Complaint#setNori(Ljava/lang/String;)V
+=======
+configuration.ConfigXML#getDbFilename()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

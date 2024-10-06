@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 configuration.UtilDate#<init>()V
+=======
+domain.Booking#setStatus(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

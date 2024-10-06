@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#setMoney(D)V
+=======
+gui.DeskontuaGUI#setBusinessLogic(LbusinessLogic/BLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

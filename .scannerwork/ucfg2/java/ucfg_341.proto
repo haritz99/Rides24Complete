@@ -1,7 +1,27 @@
 
+<<<<<<< HEAD
 *configuration.ConfigXML#getDatabasePort()IY
 OC:/Users/Ikaslea/git/Rides24Complete/src/main/java/configuration/ConfigXML.java5 5("1*!
 16	 6("
 6 6(
 ""B
 configuration.ConfigXMLHX
+=======
+@configuration.ConfigXML#getBusinessLogicPort()Ljava/lang/String;X
+LC:/Users/user/git/Rides24Complete/src/main/java/configuration/ConfigXML.java— —(#"1*µ
+1
+˜	 ˜(|
+z
+
+˜	 ˜(
+%0java.lang.String"__id*N
+
+__unknown_file (2*0
+configuration.ConfigXML"
+businessLogicPort"&
+
+˜ ˜(
+
+%0java.lang.StringB
+configuration.ConfigXMLH
+>>>>>>> refs/remotes/Rides24Complete/master

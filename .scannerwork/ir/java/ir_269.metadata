@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Movement#getKopurua()D
+=======
+domain.Ride#setPrice(D)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#setPassword(Ljava/lang/String;)V
+=======
+domain.User#getErreklamaKop()I
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Car#getModeloa()Ljava/lang/String;
+=======
+domain.Ride#getFrom()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

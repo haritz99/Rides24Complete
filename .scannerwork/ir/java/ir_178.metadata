@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 exceptions.RideAlreadyExistException#<init>()V
 ==
 <init> java.lang.Exception#<init>()V
+=======
+businessLogic.BLFacadeImplementation#initializeBD()V
+>>>>>>> refs/remotes/Rides24Complete/master

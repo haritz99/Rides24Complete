@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 testOperations.TestBusinessLogic#removeDriver(Ljava/lang/String;)Z
+=======
+gui.BezeroGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

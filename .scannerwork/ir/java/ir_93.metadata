@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Driver#bilatumatrikula(Ljava/lang/String;)LCar;
+=======
+domain.User#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

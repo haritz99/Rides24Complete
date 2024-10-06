@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#getUsername()Ljava/lang/String;
+=======
+domain.User#toString()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

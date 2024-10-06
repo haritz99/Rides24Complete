@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 domain.Complaint#getEgoera()Ljava/lang/String;
+=======
+domain.Admin2#equals(Ljava/lang/Object;)Z
+java.lang.Object#getClass()Ljava/lang/Class;
+>>>>>>> refs/remotes/Rides24Complete/master

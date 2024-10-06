@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+=======
+businessLogic.BLFacadeImplementation#updateBooking(Ldomain/Booking;)V
+>>>>>>> refs/remotes/Rides24Complete/master

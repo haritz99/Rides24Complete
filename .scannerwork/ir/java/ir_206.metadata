@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#addTraveler(Ljava/lang/String;Ljava/lang/String;)Z
+=======
+businessLogic.BLFacadeImplementation#getAllDiscounts()Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

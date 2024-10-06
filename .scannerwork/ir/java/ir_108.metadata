@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#getPassword()Ljava/lang/String;
+=======
+domain.User#setBalkop(I)V
+>>>>>>> refs/remotes/Rides24Complete/master

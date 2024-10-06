@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 domain.Car#setDriver(LDriver;)V
+=======
+domain.Ride#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IDLDriver;)V
+==
+<init> java.lang.Object#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

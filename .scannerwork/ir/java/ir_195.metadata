@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+=======
+businessLogic.BLFacadeImplementation#updateUser(LUser;)V
+>>>>>>> refs/remotes/Rides24Complete/master

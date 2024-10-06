@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#updateDriver(LDriver;)V
+=======
+businessLogic.BLFacadeImplementation#getAlert(I)Ldomain/Alert;
+>>>>>>> refs/remotes/Rides24Complete/master

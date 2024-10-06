@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Ride#setActive(Z)V
+=======
+gui.ArazoaGUI#getBusinessLogic()LBLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#getDriver(Ljava/lang/String;)LDriver;
+=======
+dataAccess.DataAccess#getDriver(Ljava/lang/String;)Ldomain/Driver;
+==
+isEmpty java.util.List#isEmpty()Z
+get java.util.List#get(I)Ljava/lang/Object;
+>>>>>>> refs/remotes/Rides24Complete/master

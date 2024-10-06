@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Complaint#getNori()Ljava/lang/String;
+=======
+configuration.ConfigXML#getBusinessLogicName()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

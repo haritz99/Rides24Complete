@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 exceptions.RideAlreadyExistException#instance-init#
+=======
+businessLogic.BLFacadeImplementation#close()V
+null
+>>>>>>> refs/remotes/Rides24Complete/master

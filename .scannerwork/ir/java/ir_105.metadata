@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+=======
+domain.User#setIzoztatutakoDirua(D)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.LoginGUI#instance-init#
 javax.swing.JPasswordField#<init>()V
 javax.swing.JLabel#<init>(Ljava/lang/String;)V
@@ -9,3 +10,6 @@ java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
 javax.swing.JButton#<init>(Ljava/lang/String;)V
 javax.swing.JPasswordField#instance-init#
 javax.swing.JButton#instance-init#
+=======
+gui.DriverGUI#setBussinessLogic(LBLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

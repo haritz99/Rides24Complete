@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.MoneyGUI#<init>(Ljava/lang/String;)V
 java.awt.Dimension#<init>(II)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
@@ -19,3 +20,6 @@ addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/A
 setBounds java.awt.Component#setBounds(IIII)V
 addActionListener javax.swing.JComboBox#addActionListener(Ljava/awt/event/ActionListener;)V
 setSize java.awt.Window#setSize(Ljava/awt/Dimension;)V
+=======
+gui.AlertaSortuGUI#setBussinessLogic(LBLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

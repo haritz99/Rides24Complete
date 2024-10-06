@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.AdminGUI#setBussinessLogic(LBLFacade;)V
+=======
+domain.Movement#setUsername(LUser;)V
+>>>>>>> refs/remotes/Rides24Complete/master

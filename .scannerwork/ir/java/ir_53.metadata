@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 testOperations.TestDataAccess#close()V
 ==
 println java.io.PrintStream#println(Ljava/lang/String;)V
+=======
+gui.EzabatuGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

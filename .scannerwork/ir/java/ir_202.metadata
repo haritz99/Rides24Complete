@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getDriver(Ljava/lang/String;)LDriver;
+=======
+businessLogic.BLFacadeImplementation#getKotxeByMatrikula(Ljava/lang/String;)Ldomain/Car;
+>>>>>>> refs/remotes/Rides24Complete/master

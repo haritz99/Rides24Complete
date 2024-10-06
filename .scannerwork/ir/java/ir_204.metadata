@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getMotaByUsername(Ljava/lang/String;)Ljava/lang/String;
+=======
+businessLogic.BLFacadeImplementation#updateComplaint(LComplaint;)V
+>>>>>>> refs/remotes/Rides24Complete/master

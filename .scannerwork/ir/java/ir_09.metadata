@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#getUser(Ljava/lang/String;)LUser;
+=======
+dataAccess.DataAccess#getUser(Ljava/lang/String;)Ldomain/User;
+>>>>>>> refs/remotes/Rides24Complete/master

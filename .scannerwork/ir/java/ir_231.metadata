@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getUserList()Ljava/util/List;
+=======
+domain.Car#<init>(Ljava/lang/String;Ljava/lang/String;I)V
+==
+<init> java.lang.Object#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

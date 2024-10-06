@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 domain.Traveler#instance-init#
+=======
+domain.Traveler#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master
 java.util.Vector#<init>()V

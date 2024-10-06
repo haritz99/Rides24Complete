@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.ErreserbaOnartuGUI#instance-init#
+=======
+domain.User#setUsername(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

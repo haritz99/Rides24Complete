@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#getTraveler(Ljava/lang/String;)LTraveler;
+=======
+dataAccess.DataAccess#getTraveler(Ljava/lang/String;)Ldomain/Traveler;
+==
+isEmpty java.util.List#isEmpty()Z
+get java.util.List#get(I)Ljava/lang/Object;
+>>>>>>> refs/remotes/Rides24Complete/master

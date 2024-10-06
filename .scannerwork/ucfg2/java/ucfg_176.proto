@@ -1,76 +1,0 @@
-
-ÖbusinessLogic.BLFacadeImplementation#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;f
-\C:/Users/Ikaslea/git/Rides24Complete/src/main/java/businessLogic/BLFacadeImplementation.javak k(-"startingBlock*Æ
-startingBlockk- k(PÅ
-
-j j(
-%0"
-__annotate*)
-
-__unknown_file (
-	WebMethod*6
-
-__unknown_file (
-
-fromjava.lang.StringX
-V
-k5 k(9
-fromjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%0
-}
-j j(
-%1"
-__annotate*)
-
-__unknown_file (
-	WebMethod*4
-
-__unknown_file (
-
-tojava.lang.StringV
-T
-kB k(D
-tojava.lang.String"__annotation*"
-
-__unknown_file (
-
-%1
-}
-j j(
-%2"
-__annotate*)
-
-__unknown_file (
-	WebMethod*4
-
-__unknown_file (
-
-datejava.util.DateV
-T
-kK k(O
-datejava.util.Date"__annotation*"
-
-__unknown_file (
-
-%2*
-1*Ö
-1l l(O
-M
-m m(J
-datesjava.util.List"__id*"
-
-__unknown_file (
-"""%
-o o(
-
-datesjava.util.List:$
-k. k(:
-fromjava.lang.String:"
-k; k(E
-tojava.lang.String:"
-kF k(O
-datejava.util.DateB(&
-$businessLogic.BLFacadeImplementationH

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getPastBookedRides(Ljava/lang/String;)Ljava/util/List;
+=======
+businessLogic.BLFacadeImplementation#deleteUser(LUser;)V
+>>>>>>> refs/remotes/Rides24Complete/master

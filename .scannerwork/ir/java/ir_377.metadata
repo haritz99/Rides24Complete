@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Complaint#setBooking(Ldomain/Booking;)V
+=======
+domain.Admin2#setUsername(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

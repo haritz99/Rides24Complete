@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 gui.BookGUI#paintDaysWithEvents(LJCalendar;Ljava/util/List;Ljava/awt/Color;)V
 java.util.Calendar#setTime(Ljava/util/Date;)V
 ==
 setBackground java.awt.Component#setBackground(Ljava/awt/Color;)V
 set java.util.Calendar#set(II)V
+=======
+gui.BookGUI#paintDaysWithEvents(LJCalendar;Ljava/util/List;Ljava/awt/Color;)V
+java.util.Calendar#setTime(Ljava/util/Date;)V
+==
+setBackground java.awt.Component#setBackground(Ljava/awt/Color;)V
+set java.util.Calendar#set(II)V
+>>>>>>> refs/remotes/Rides24Complete/master
 get java.util.Calendar#get(I)I

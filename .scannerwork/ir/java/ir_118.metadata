@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#toString()Ljava/lang/String;
+=======
+gui.LoginGUI#setBusinessLogic(LbusinessLogic/BLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.TravelerGUI#setBussinessLogic(LBLFacade;)V
+=======
+businessLogic.BLFacadeImplementation#addTraveler(Ljava/lang/String;Ljava/lang/String;)Z
+>>>>>>> refs/remotes/Rides24Complete/master

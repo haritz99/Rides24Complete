@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 7configuration.ConfigXML#getPassword()Ljava/lang/String;Y
 OC:/Users/Ikaslea/git/Rides24Complete/src/main/java/configuration/ConfigXML.java= =("1*¦
 1>	 >(q
@@ -11,6 +12,23 @@ o
 
 password"$
 > >(
+=======
+9configuration.ConfigXML#getDbFilename()Ljava/lang/String;X
+LC:/Users/user/git/Rides24Complete/src/main/java/configuration/ConfigXML.javaŸ Ÿ("1*®
+1
+ 	  (u
+s
+
+ 	  (
+%0java.lang.String"__id*G
+
+__unknown_file (+*)
+configuration.ConfigXML"
+
+dbFilename"&
+
+   (
+>>>>>>> refs/remotes/Rides24Complete/master
 
 %0java.lang.StringB
 configuration.ConfigXMLH

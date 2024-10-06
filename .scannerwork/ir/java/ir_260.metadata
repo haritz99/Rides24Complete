@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Car#getEserlekuak()I
+=======
+domain.Ride#getTo()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.BaloraGUI#<init>(Ljava/lang/String;)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 java.awt.Color#<init>(III)V
@@ -32,3 +33,9 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 setContentPane javax.swing.JFrame#setContentPane(Ljava/awt/Container;)V
 setBounds java.awt.Component#setBounds(Ljava/awt/Rectangle;)V
 setForeground javax.swing.JComponent#setForeground(Ljava/awt/Color;)V
+=======
+domain.Driver#removeRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)LRide;
+==
+println java.io.PrintStream#println([C)V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

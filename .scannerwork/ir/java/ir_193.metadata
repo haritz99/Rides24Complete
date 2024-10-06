@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getDestinationCities(Ljava/lang/String;)Ljava/util/List;
+=======
+businessLogic.BLFacadeImplementation#updateTraveler(LTraveler;)V
+>>>>>>> refs/remotes/Rides24Complete/master

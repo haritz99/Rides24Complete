@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Booking#setStatus(Ljava/lang/String;)V
+=======
+domain.Complaint#setDeskripzioa(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

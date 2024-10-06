@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 gui.BaloraGUI#getBusinessLogic()LbusinessLogic/BLFacade;
+=======
+domain.Driver#doesRideExists(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Z
+java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+>>>>>>> refs/remotes/Rides24Complete/master

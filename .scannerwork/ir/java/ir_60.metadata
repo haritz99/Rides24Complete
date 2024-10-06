@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.EzabatuGUI#<init>()V
 gui.EzabatuGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
 javax.swing.JTable#<init>()V
@@ -33,3 +34,6 @@ addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 getUserList businessLogic.BLFacade#getUserList()Ljava/util/List;
 setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+=======
+domain.Discount#setKodea(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

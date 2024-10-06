@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#isRegistered(Ljava/lang/String;Ljava/lang/String;)Z
+=======
+dataAccess.DataAccess#isRegistered(Ljava/lang/String;Ljava/lang/String;)Z
+>>>>>>> refs/remotes/Rides24Complete/master
 java.lang.String#compareTo(Ljava/lang/String;)I

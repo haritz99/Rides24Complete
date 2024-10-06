@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 CreateRideMockBlackTest#<init>()V
+=======
+businessLogic.BusinessLogicServer#instance-init#
+javax.swing.JPanel#<init>()V
+javax.swing.JPanel#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

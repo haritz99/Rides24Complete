@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.DriverGUI#setBussinessLogic(LBLFacade;)V
+=======
+gui.ApplicationLauncher#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

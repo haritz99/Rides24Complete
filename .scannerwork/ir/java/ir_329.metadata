@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 configuration.UtilDate#datesAreEqualIgnoringTime(Ljava/util/Date;Ljava/util/Date;)Z
 java.util.Calendar#getInstance()Ljava/util/Calendar;
 java.util.Calendar#setTime(Ljava/util/Date;)V
 ==
 get java.util.Calendar#get(I)I
+=======
+domain.Booking#setComplaint(LComplaint;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.DeskontuKudeatuGUI#<init>(Ljava/lang/String;)V
 javax.swing.JTable#<init>()V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
@@ -32,3 +33,6 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+=======
+domain.User#getBalorazioa()D
+>>>>>>> refs/remotes/Rides24Complete/master

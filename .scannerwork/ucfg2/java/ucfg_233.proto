@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 %domain.Ride#getTo()Ljava/lang/String;M
 CC:/Users/Ikaslea/git/Rides24Complete/src/main/java/domain/Ride.javaY Y("1*”
 1Z	 Z(_
@@ -13,3 +14,11 @@ CC:/Users/Ikaslea/git/Rides24Complete/src/main/java/domain/Ride.javaY Y("1*
 
 %0java.lang.StringB
 domain.RideH
+=======
+domain.Movement#getKopurua()DN
+DC:/Users/user/git/Rides24Complete/src/main/java/domain/Movement.java. .("1*!
+1/ /("
+/ /(
+""B
+domain.MovementHX
+>>>>>>> refs/remotes/Rides24Complete/master

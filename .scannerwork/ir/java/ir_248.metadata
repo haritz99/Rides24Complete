@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.AlertakKudeatuGUI#setBussinessLogic(LBLFacade;)V
+=======
+domain.Movement#setKopurua(D)V
+>>>>>>> refs/remotes/Rides24Complete/master

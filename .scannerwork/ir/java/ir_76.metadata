@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Discount#setActive(Z)V
+=======
+domain.Driver#addCar(LCar;)V
+>>>>>>> refs/remotes/Rides24Complete/master

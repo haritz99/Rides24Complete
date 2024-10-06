@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.ErreklamazioakGUI#<init>(Ljava/lang/String;Ljava/lang/String;Ldomain/Booking;)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 java.util.Date#<init>()V
@@ -28,3 +29,6 @@ addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/A
 setBounds java.awt.Component#setBounds(IIII)V
 setForeground javax.swing.JComponent#setForeground(Ljava/awt/Color;)V
 setSize java.awt.Window#setSize(Ljava/awt/Dimension;)V
+=======
+gui.MoneyGUI#setBussinessLogic(LBLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

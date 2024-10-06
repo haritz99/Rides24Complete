@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 gui.RegisterGUI#setBussinessLogic(LBLFacade;)V
+=======
+gui.MovementsGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

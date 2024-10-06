@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 domain.IntegerAdapter#marshal(Ljava/lang/Integer;)Ljava/lang/String;
+=======
+domain.IntegerAdapter#marshal(Ljava/lang/Integer;)Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master
 java.lang.Integer#toString()Ljava/lang/String;

@@ -1,15 +1,0 @@
-
-stestOperations.TestBusinessLogic#existRide(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Zb
-XC:/Users/Ikaslea/git/Rides24Complete/src/test/java/testOperations/TestBusinessLogic.java6 6("1*!
-17 7("
-: :(
-"":%
-6 6((
-emailjava.lang.String:$
-6) 6(5
-fromjava.lang.String:"
-66 6(@
-tojava.lang.String:"
-6A 6(J
-datejava.util.DateB$"
- testOperations.TestBusinessLogicHX

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.DeskontuaGUI#<init>(Ljava/lang/String;)V
 javax.swing.JLabel#<init>(Ljava/lang/String;)V
 javax.swing.JTextField#instance-init#
@@ -20,3 +21,10 @@ getContentPane javax.swing.JFrame#getContentPane()Ljava/awt/Container;
 setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 setBounds java.awt.Component#setBounds(IIII)V
+=======
+gui.DriverGUI#instance-init#
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+javax.swing.JButton#<init>(Ljava/lang/String;)V
+javax.swing.JButton#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

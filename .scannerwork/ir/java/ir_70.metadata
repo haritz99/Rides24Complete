@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 domain.Discount#<init>(Ljava/lang/String;DZ)V
+=======
+domain.Driver#instance-init#
+java.util.Vector#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

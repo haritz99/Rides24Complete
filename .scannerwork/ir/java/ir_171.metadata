@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 gui.AlertaAurkituakGUI#closeButton_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
 setVisible java.awt.Window#setVisible(Z)V
+=======
+businessLogic.BLFacadeImplementation#<init>(LDataAccess;)V
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

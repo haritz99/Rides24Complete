@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.DeskontuKudeatuGUI#setBussinessLogic(LBLFacade;)V
+=======
+domain.User#setMoney(D)V
+>>>>>>> refs/remotes/Rides24Complete/master

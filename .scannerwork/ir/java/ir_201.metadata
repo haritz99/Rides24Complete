@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#isRegistered(Ljava/lang/String;Ljava/lang/String;)Z
+=======
+businessLogic.BLFacadeImplementation#isAdded(Ljava/lang/String;Ljava/lang/String;)Z
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,57 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#deleteDiscount(LDiscount;)V
+=======
+gui.AlertakKudeatuGUI#<init>(Ljava/lang/String;)V
+javax.swing.JTable#<init>()V
+java.text.SimpleDateFormat#instance-init#
+javax.swing.JButton#<init>(Ljava/lang/String;)V
+javax.swing.table.DefaultTableModel#<init>([Ljava/lang/Object;I)V
+java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;
+java.awt.Dimension#<init>(II)V
+java.awt.FlowLayout#instance-init#
+java.awt.BorderLayout#<init>(II)V
+java.awt.Dimension#instance-init#
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+javax.swing.JTable#instance-init#
+javax.swing.JButton#instance-init#
+javax.swing.JScrollPane#<init>(Ljava/awt/Component;)V
+javax.swing.table.DefaultTableModel#instance-init#
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.awt.FlowLayout#<init>()V
+javax.swing.JPanel#<init>()V
+javax.swing.JScrollPane#instance-init#
+javax.swing.JLabel#<init>()V
+javax.swing.JPanel#instance-init#
+java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V
+gui.AlertakKudeatuGUI#setBussinessLogic(LBLFacade;)V
+javax.swing.JLabel#instance-init#
+gui.TravelerGUI#getBusinessLogic()LBLFacade;
+java.awt.BorderLayout#instance-init#
+==
+add java.awt.Container#add(Ljava/awt/Component;Ljava/lang/Object;)V
+setMinWidth javax.swing.table.TableColumn#setMinWidth(I)V
+setWidth javax.swing.table.TableColumn#setWidth(I)V
+setMaxWidth javax.swing.table.TableColumn#setMaxWidth(I)V
+getTableHeader javax.swing.JTable#getTableHeader()Ljavax/swing/table/JTableHeader;
+setResizable java.awt.Frame#setResizable(Z)V
+isActive domain.Alert#isActive()Z
+setReorderingAllowed javax.swing.table.JTableHeader#setReorderingAllowed(Z)V
+setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
+addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
+setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+getAlertNumber domain.Alert#getAlertNumber()Ljava/lang/Integer;
+getContentPane javax.swing.JFrame#getContentPane()Ljava/awt/Container;
+setModel javax.swing.JTable#setModel(Ljavax/swing/table/TableModel;)V
+getColumnModel javax.swing.JTable#getColumnModel()Ljavax/swing/table/TableColumnModel;
+setColumnSelectionAllowed javax.swing.JTable#setColumnSelectionAllowed(Z)V
+getTo domain.Alert#getTo()Ljava/lang/String;
+isFound domain.Alert#isFound()Z
+setSize java.awt.Window#setSize(Ljava/awt/Dimension;)V
+setRowSelectionAllowed javax.swing.JTable#setRowSelectionAllowed(Z)V
+getDate domain.Alert#getDate()Ljava/util/Date;
+getFrom domain.Alert#getFrom()Ljava/lang/String;
+getColumn javax.swing.table.TableColumnModel#getColumn(I)Ljavax/swing/table/TableColumn;
+add java.awt.Container#add(Ljava/awt/Component;)Ljava/awt/Component;
+setTitle java.awt.Frame#setTitle(Ljava/lang/String;)V
+addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
+>>>>>>> refs/remotes/Rides24Complete/master

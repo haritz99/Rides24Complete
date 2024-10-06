@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 gui.ApplicationLauncher#<init>()V
+=======
+gui.BezeroGUI#getBusinessLogic()LBLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master

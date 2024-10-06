@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Alert#setTraveler(LTraveler;)V
+=======
+domain.Booking#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

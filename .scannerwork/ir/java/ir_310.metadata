@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Alert#getDate()Ljava/util/Date;
+=======
+gui.MainGUI#setBussinessLogic(LBLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

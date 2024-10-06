@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.RegisterGUI#<init>()V
 java.awt.Dimension#<init>(II)V
 gui.RegisterGUI#setBussinessLogic(LBLFacade;)V
@@ -15,3 +16,6 @@ setResizable java.awt.Frame#setResizable(Z)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 setBounds java.awt.Component#setBounds(IIII)V
 setSize java.awt.Window#setSize(Ljava/awt/Dimension;)V
+=======
+gui.BidaiakKudeatuGUI#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

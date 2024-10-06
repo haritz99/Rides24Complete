@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#addDriver(Ljava/lang/String;Ljava/lang/String;)Z
+=======
+businessLogic.BLFacadeImplementation#createDiscount(LDiscount;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 domain.Traveler#toString()Ljava/lang/String;
 ==
 toString java.lang.Object#toString()Ljava/lang/String;
+=======
+domain.Traveler#toString()Ljava/lang/String;
+==
+toString domain.User#toString()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

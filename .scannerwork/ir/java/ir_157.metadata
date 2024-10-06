@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 testOperations.TestBusinessLogic#createDriver(Ljava/lang/String;Ljava/lang/String;)LDriver;
+=======
+exceptions.RideAlreadyExistException#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

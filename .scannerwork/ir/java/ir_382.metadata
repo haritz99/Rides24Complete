@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gui.MoneyGUI#instance-init#
 javax.swing.JTextField#instance-init#
 javax.swing.JTextField#<init>()V
@@ -7,3 +8,6 @@ java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
 javax.swing.JButton#<init>(Ljava/lang/String;)V
 javax.swing.JLabel#<init>()V
 javax.swing.JButton#instance-init#
+=======
+domain.Admin2#setMota(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

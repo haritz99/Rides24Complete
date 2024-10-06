@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getAlert(I)LAlert;
+=======
+domain.Car#getMatrikula()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

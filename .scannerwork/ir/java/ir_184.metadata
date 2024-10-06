@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 gui.TravelerGUI#instance-init#
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
 javax.swing.JButton#<init>(Ljava/lang/String;)V
 javax.swing.JButton#instance-init#
+=======
+businessLogic.BLFacadeImplementation#getMotaByUsername(Ljava/lang/String;)Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

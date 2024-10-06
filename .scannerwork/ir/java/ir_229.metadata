@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 businessLogic.BLFacadeImplementation#getDiscount(Ljava/lang/String;)LDiscount;
+=======
+gui.AlertakKudeatuGUI#refreshTable(Ljava/lang/String;)V
+java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V
+java.text.SimpleDateFormat#instance-init#
+java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;
+==
+getAlertNumber domain.Alert#getAlertNumber()Ljava/lang/Integer;
+addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
+isActive domain.Alert#isActive()Z
+getModel javax.swing.JTable#getModel()Ljavax/swing/table/TableModel;
+setRowCount javax.swing.table.DefaultTableModel#setRowCount(I)V
+getTo domain.Alert#getTo()Ljava/lang/String;
+isFound domain.Alert#isFound()Z
+getDate domain.Alert#getDate()Ljava/util/Date;
+getFrom domain.Alert#getFrom()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

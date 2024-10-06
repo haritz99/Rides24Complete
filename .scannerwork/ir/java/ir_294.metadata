@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Ride#toString()Ljava/lang/String;
+=======
+domain.Alert#isActive()Z
+>>>>>>> refs/remotes/Rides24Complete/master

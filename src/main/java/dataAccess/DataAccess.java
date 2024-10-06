@@ -648,6 +648,7 @@ public class DataAccess {
 	}
 
 	public void cancelRide(Ride ride) {
+		//Comentario 1
 		try {
 			db.getTransaction().begin();
 

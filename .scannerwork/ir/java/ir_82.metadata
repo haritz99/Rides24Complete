@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 domain.Driver#instance-init#
 java.util.Vector#<init>()V
+=======
+domain.Driver#removeCar(LCar;)V
+>>>>>>> refs/remotes/Rides24Complete/master

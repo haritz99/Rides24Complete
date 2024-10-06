@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 domain.Booking#<init>(LRide;LTraveler;I)V
+=======
+domain.Complaint#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;LBooking;Ljava/lang/String;Z)V
+==
+<init> java.lang.Object#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

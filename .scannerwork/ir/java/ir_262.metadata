@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.Movement#instance-init#
+=======
+domain.Ride#getDate()Ljava/util/Date;
+>>>>>>> refs/remotes/Rides24Complete/master

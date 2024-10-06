@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 domain.User#setErreklamaKop(I)V
+=======
+gui.RegisterGUI#getBusinessLogic()LbusinessLogic/BLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master
