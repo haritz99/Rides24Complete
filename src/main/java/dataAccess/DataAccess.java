@@ -673,10 +673,12 @@ public class DataAccess {
 			db.merge(ride);
 
 			db.getTransaction().commit();
+		
 		} catch (Exception e) {
 			if (db.getTransaction().isActive()) {
 				db.getTransaction().rollback();
 			}
+			
 			e.printStackTrace();
 		}
 	}
