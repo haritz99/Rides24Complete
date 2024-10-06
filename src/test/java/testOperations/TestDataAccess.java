@@ -12,10 +12,7 @@ import javax.persistence.Query;
 import configuration.ConfigXML;
 import domain.Driver;
 import domain.Ride;
-<<<<<<< HEAD
 import domain.Traveler;
-=======
->>>>>>> refs/remotes/Rides24Complete/master
 import domain.User;
 
 
@@ -140,7 +137,6 @@ public class TestDataAccess {
 
 		}
 		
-<<<<<<< HEAD
 		public void addUser(User user) {
 			db.getTransaction().begin();
 			db.persist(user);
@@ -170,7 +166,6 @@ public class TestDataAccess {
 			db.getTransaction().commit();
 			}
 		}
-=======
 		public User addUser1(String username, String password, String mota) {
 			User user = null;
 			try {
@@ -252,9 +247,6 @@ public class TestDataAccess {
 	            return null;
 	        }
 		}
-		
-
->>>>>>> refs/remotes/Rides24Complete/master
 
 		
 }

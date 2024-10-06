@@ -30,7 +30,7 @@ public class bookRideBlackTest {
 	private Driver d;
 
 	@Test
-	public void test5() {
+	public void test1() {
 		//Primer test de caja negra, el usuario no está en la BD
 		seats = 2;
 		desk = 0.1;
@@ -69,7 +69,7 @@ public class bookRideBlackTest {
 	}
 	
 	@Test
-	public void test6() {
+	public void test2() {
 		//Segundo test caja negra, en este caso el número de asientos es negativo
 		seats = -1;
 		desk = 0.0;
@@ -94,7 +94,6 @@ public class bookRideBlackTest {
 		testDA.close();
 		try {
 			sut.open();
-			if(seats < 0 || desk < 0) throw new IllegalArgumentException("No puede ser un número negativo");
 				boolean resultado = sut.bookRide(user.getUsername(), ride, seats, desk);
 				fail();
 		}catch(IllegalArgumentException e) {
@@ -112,7 +111,7 @@ public class bookRideBlackTest {
 	}
 	
 	@Test
-	public void test7() {
+	public void test3() {
 		//Tercer test caja negra, en este caso ride no está en la BD
 		seats = 2;
 		desk = 0.0;
@@ -137,7 +136,6 @@ public class bookRideBlackTest {
 		ride = new Ride(from, to, rideDate, 10, 5.0, d);
 		try {
 			sut.open();
-			if(seats < 0 || desk < 0) throw new Exception("Parámetros negativos");
 			boolean resultado = sut.bookRide(user.getUsername(), ride, seats, desk);
 			fail();
 		}catch(Exception e) {
@@ -154,7 +152,7 @@ public class bookRideBlackTest {
 	}
 	
 	@Test
-	public void test8() {
+	public void test4() {
 		//Cuarto test caja negra, en este caso el descuento es negativo
 		seats = 2;
 		desk = -0.1;
@@ -179,7 +177,6 @@ public class bookRideBlackTest {
 		testDA.close();
 		try {
 			sut.open();
-			if(seats < 0 || desk < 0) throw new IllegalArgumentException("No puede ser un número negativo");
 				boolean resultado = sut.bookRide(user.getUsername(), ride, seats, desk);
 				fail();
 		}catch(IllegalArgumentException e) {
@@ -199,7 +196,7 @@ public class bookRideBlackTest {
 	
 	
 	@Test
-	public void test9() {
+	public void test5() {
 		//Quinto test de caja negra, todos los parámetros son correctos, pero el viajero no tiene dinero así que no debería poder reservar
 		seats = 2;
 		desk = 0.5;
