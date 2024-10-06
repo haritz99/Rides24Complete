@@ -60,7 +60,7 @@ public class TravelerGUI extends JFrame {
 		jButtonAlertakKudeatu.setText(ResourceBundle.getBundle("Etiquetas").getString("TravelerGUI.ManageAlerts"));
 		jButtonAlertakKudeatu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFrame a = new AlertakKudeatuGUI(username);
+				JFrame a = new GestionarAlertaGUI(username);
 				a.setVisible(true);
 			}
 		});

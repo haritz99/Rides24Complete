@@ -52,7 +52,7 @@ public class CreateRideMockTest {
 	 }
 	
 	
-	
+	//Test4, añadir un viaje ya existente
 	@Test
 	public void test4() {
 	String driverUsername="Driver Test";
@@ -60,7 +60,7 @@ public class CreateRideMockTest {
 	String rideFrom="Donostia";
 	String rideTo="Zarautz";
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-	Date rideDate=null;
+	Date rideDate=null;;
 	try {
 	rideDate = sdf.parse("05/10/2026");
 	} catch (ParseException e) {
@@ -77,16 +77,18 @@ public class CreateRideMockTest {
 	sut.open();
 	sut.createRide(rideFrom,rideTo,rideDate,0,0,driverUsername);
 	sut.close();
-	assertTrue(true);
+	fail();
 	} catch (RideAlreadyExistException e) {
 	//verify the results
 	sut.close();
 	assertTrue(true);
-		} catch (RideMustBeLaterThanTodayException e) {
-			fail();
-		}	
+	} catch (RideMustBeLaterThanTodayException e) {
+		fail();
 	}
+}
 	
+	
+	//Test5, añadir un viaje q existe previamente
 	
 	@Test
 	public void test5() {

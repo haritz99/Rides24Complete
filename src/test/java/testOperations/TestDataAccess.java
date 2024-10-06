@@ -11,6 +11,8 @@ import javax.persistence.Persistence;
 import configuration.ConfigXML;
 import domain.Driver;
 import domain.Ride;
+import domain.Traveler;
+import domain.User;
 
 
 public class TestDataAccess {
@@ -133,7 +135,36 @@ public class TestDataAccess {
 			return null;
 
 		}
-
+		
+		public void addUser(User user) {
+			db.getTransaction().begin();
+			db.persist(user);
+			db.getTransaction().commit();
+		}
+		
+		public void removeUser(User user) {
+			User usuario = db.find(User.class, user.getUsername());
+			if(usuario !=null) {
+			db.getTransaction().begin();
+			db.remove(usuario);
+			db.getTransaction().commit();
+			}
+		}
+		
+		public void addTraveler(Traveler traveler) {
+			db.getTransaction().begin();
+			db.persist(traveler);
+			db.getTransaction().commit();
+		}
+		
+		public void removeTraveler(Traveler traveler) {
+			Traveler viajero = db.find(Traveler.class, traveler.getUsername());
+			if(viajero !=null) {
+			db.getTransaction().begin();
+			db.remove(viajero);
+			db.getTransaction().commit();
+			}
+		}
 
 		
 }

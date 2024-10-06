@@ -17,17 +17,18 @@ import configuration.UtilDate;
 import domain.Alert;
 import domain.Traveler;
 
-public class AlertaSortuGUI extends JFrame {
+public class CrearAlertaGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	private JTextField fieldOrigin = new JTextField();
 	private JTextField fieldDestination = new JTextField();
+	final String etiquetas = "Etiquetas";
 
 	private JLabel jLabelOrigin = new JLabel(
-			ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.LeavingFrom"));
+			ResourceBundle.getBundle(etiquetas).getString("CreateRideGUI.LeavingFrom"));
 	private JLabel jLabelDestination = new JLabel(
-			ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.GoingTo"));
-	private JLabel jLabRideDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.RideDate"));
+			ResourceBundle.getBundle(etiquetas).getString("CreateRideGUI.GoingTo"));
+	private JLabel jLabRideDate = new JLabel(ResourceBundle.getBundle(etiquetas).getString("CreateRideGUI.RideDate"));
 
 	private JCalendar jCalendar = new JCalendar();
 	private Calendar calendarAct = null;
@@ -38,8 +39,8 @@ public class AlertaSortuGUI extends JFrame {
 
 	private JScrollPane scrollPaneEvents = new JScrollPane();
 
-	private JButton jButtonCreate = new JButton(ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.AddAlert"));
-	private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Close"));
+	private JButton jButtonCreate = new JButton(ResourceBundle.getBundle(etiquetas).getString("AlertGUI.AddAlert"));
+	private JButton jButtonClose = new JButton(ResourceBundle.getBundle(etiquetas).getString("Close"));
 	private JLabel jLabelMsg = new JLabel();
 	private JLabel jLabelError = new JLabel();
 
@@ -55,14 +56,14 @@ public class AlertaSortuGUI extends JFrame {
 		appFacadeInterface = afi;
 	}
 
-	public AlertaSortuGUI(String username) {
+	public CrearAlertaGUI(String username) {
 
 		setBussinessLogic(TravelerGUI.getBusinessLogic());
 
 		this.traveler = appFacadeInterface.getTraveler(username);
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(604, 370));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.AddAlert"));
+		this.setTitle(ResourceBundle.getBundle(etiquetas).getString("AlertGUI.AddAlert"));
 
 		jLabelOrigin.setBounds(new Rectangle(33, 94, 92, 20));
 
@@ -82,20 +83,20 @@ public class AlertaSortuGUI extends JFrame {
 					Date currentDate = new Date();
 					if (selectedDate.before(UtilDate.trim(currentDate))
 							|| UtilDate.trim(selectedDate).equals(UtilDate.trim(currentDate))) {
-						jLabelMsg.setText(ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.InvalidDate"));
+						jLabelMsg.setText(ResourceBundle.getBundle(etiquetas).getString("AlertGUI.InvalidDate"));
 					} else {
 						Alert newAlert = new Alert(fieldOrigin.getText(), fieldDestination.getText(),
 								UtilDate.trim(selectedDate), traveler);
 						boolean success = appFacadeInterface.createAlert(newAlert);
 						if (success) {
-							jLabelMsg.setText(ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.AlertCreated"));
+							jLabelMsg.setText(ResourceBundle.getBundle(etiquetas).getString("AlertGUI.AlertCreated"));
 							traveler.addAlert(newAlert);
-							JFrame a = new AlertakKudeatuGUI(username);
+							JFrame a = new GestionarAlertaGUI(username);
 							a.setVisible(true);
 							jButtonClose_actionPerformed(e);
 						} else {
 							jLabelMsg.setText(
-									ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.AlertCreateFail"));
+									ResourceBundle.getBundle(etiquetas).getString("AlertGUI.AlertCreateFail"));
 						}
 					}
 				}
@@ -104,7 +105,7 @@ public class AlertaSortuGUI extends JFrame {
 		jButtonClose.setBounds(new Rectangle(275, 263, 130, 30));
 		jButtonClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFrame a = new AlertakKudeatuGUI(username);
+				JFrame a = new GestionarAlertaGUI(username);
 				a.setVisible(true);
 				jButtonClose_actionPerformed(e);
 			}
@@ -188,7 +189,7 @@ public class AlertaSortuGUI extends JFrame {
 	private String field_Errors() {
 		try {
 			if ((fieldOrigin.getText().length() == 0) || (fieldDestination.getText().length() == 0))
-				return ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorQuery");
+				return ResourceBundle.getBundle(etiquetas).getString("CreateRideGUI.ErrorQuery");
 			else
 				return null;
 		} catch (Exception e1) {

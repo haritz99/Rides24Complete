@@ -9,6 +9,7 @@ import java.awt.GridLayout;
 import java.awt.Rectangle;
 
 import javax.swing.JSlider;
+import javax.swing.SwingConstants;
 
 import businessLogic.BLFacade;
 import domain.User;
@@ -26,6 +27,7 @@ public class BaloraGUI extends JFrame {
 	private JLabel lbltxt;
 	private JPanel jContentPane = null;
 	private JButton baloratu = null;
+	final String etiquetas = "Etiquetas";
 
 	public static BLFacade getBusinessLogic() {
 		return appFacadeInterface;
@@ -39,22 +41,22 @@ public class BaloraGUI extends JFrame {
 
 		setBussinessLogic(LoginGUI.getBusinessLogic());
 		this.setSize(495, 290);
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("BezeroGUI.Baloratu"));
+		this.setTitle(ResourceBundle.getBundle(etiquetas).getString("BezeroGUI.Baloratu"));
 		this.setResizable(false);
 
 		// Bi aukerak aztertu.
 		User us = appFacadeInterface.getUser(username);
 
-		lbltxt = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("BaloraGUI.Izena") + ": " + username);
+		lbltxt = new JLabel(ResourceBundle.getBundle(etiquetas).getString("BaloraGUI.Izena") + ": " + username);
 
-		slider = new JSlider(JSlider.HORIZONTAL, 1, 5, 1);
+		slider = new JSlider(SwingConstants.HORIZONTAL, 1, 5, 1);
 		slider.setForeground(new Color(100, 100, 100));
 		slider.setMinorTickSpacing(1);
 		slider.setMajorTickSpacing(1);
 		slider.setPaintLabels(true);
 		slider.setPaintTicks(true);
 
-		baloratu = new JButton(ResourceBundle.getBundle("Etiquetas").getString("BaloraGUI.Baloratu"));
+		baloratu = new JButton(ResourceBundle.getBundle(etiquetas).getString("BaloraGUI.Baloratu"));
 		baloratu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int kont = slider.getValue();

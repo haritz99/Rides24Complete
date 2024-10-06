@@ -24,6 +24,7 @@ public class ArazoaGUI extends JFrame{
 	private JButton jButtonErrekla=null;
 	protected JLabel jLabelSelectOption;
 	private static BLFacade appFacadeInterface;
+	final String etiquetas = "Etiquetas";
 
 	public static BLFacade getBusinessLogic() {
 		return appFacadeInterface;
@@ -41,7 +42,7 @@ public class ArazoaGUI extends JFrame{
 
 		this.setSize(495, 290);
 		
-		jLabelSelectOption = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("ArazoaGUI.Arazoa"));
+		jLabelSelectOption = new JLabel(ResourceBundle.getBundle(etiquetas).getString("ArazoaGUI.Arazoa"));
 		jLabelSelectOption.setBounds(180, 11, 240, 36);
 		jLabelSelectOption.setFont(new Font("Tahoma", Font.BOLD, 13));
 		jLabelSelectOption.setForeground(Color.BLACK);
@@ -49,7 +50,7 @@ public class ArazoaGUI extends JFrame{
 		
 		jButtonJun = new JButton();
 		jButtonJun.setBounds(40, 70, 240, 50);
-		jButtonJun.setText(ResourceBundle.getBundle("Etiquetas").getString("ArazoaGUI.Eznaizaurkeztu"));
+		jButtonJun.setText(ResourceBundle.getBundle(etiquetas).getString("ArazoaGUI.Eznaizaurkeztu"));
 		jButtonJun.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				appFacadeInterface.erreklamazioaBidali(nori, nork, gaur, booking, "Ez da agertu",false);
@@ -59,7 +60,7 @@ public class ArazoaGUI extends JFrame{
 		
 		jButtonErrekla = new JButton();
 		jButtonErrekla.setBounds(40, 70, 240, 50);
-		jButtonErrekla.setText(ResourceBundle.getBundle("Etiquetas").getString("BezeroGUI.Erreklamatu"));
+		jButtonErrekla.setText(ResourceBundle.getBundle(etiquetas).getString("BezeroGUI.Erreklamatu"));
 		jButtonErrekla.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new ErreklamazioakGUI(nork, nori, booking);

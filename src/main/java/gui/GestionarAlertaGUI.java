@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 
-public class AlertakKudeatuGUI extends JFrame {
+public class GestionarAlertaGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private static BLFacade appFacadeInterface;
@@ -29,7 +29,7 @@ public class AlertakKudeatuGUI extends JFrame {
 		appFacadeInterface = afi;
 	}
 
-	public AlertakKudeatuGUI(String username) {
+	public GestionarAlertaGUI(String username) {
 
 		setBussinessLogic(TravelerGUI.getBusinessLogic());
 		this.setSize(new Dimension(600, 400));
@@ -81,7 +81,7 @@ public class AlertakKudeatuGUI extends JFrame {
 		addButton = new JButton(ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.AddAlert"));
 		addButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFrame a = new AlertaSortuGUI(username);
+				JFrame a = new CrearAlertaGUI(username);
 				a.setVisible(true);
 				closeButton_actionPerformed(e);
 			}
