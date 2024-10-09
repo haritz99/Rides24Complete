@@ -24,7 +24,7 @@ public class ArazoaGUI extends JFrame{
 	private JButton jButtonErrekla=null;
 	protected JLabel jLabelSelectOption;
 	private static BLFacade appFacadeInterface;
-	final String etiquetas = "Etiquetas";
+	static final String etiquetas = "Etiquetas";
 
 	public static BLFacade getBusinessLogic() {
 		return appFacadeInterface;
