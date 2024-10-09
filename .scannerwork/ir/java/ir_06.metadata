@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
 java.util.ArrayList#<init>()V
 java.util.ArrayList#instance-init#
 ==
 addAll java.util.List#addAll(Ljava/util/Collection;)Z
+=======
+dataAccess.DataAccess#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+==
+addAll java.util.List#addAll(Ljava/util/Collection;)Z
+>>>>>>> refs/remotes/Rides24Complete/master
 println java.io.PrintStream#println(Ljava/lang/String;)V

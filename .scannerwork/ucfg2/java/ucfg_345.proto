@@ -1,4 +1,12 @@
 
+<<<<<<< HEAD
+/configuration.ConfigXML#isBusinessLogicLocal()ZY
+OC:/Users/Ikaslea/git/Rides24Complete/src/main/java/configuration/ConfigXML.javaE E($"1*!
+1F	 F("
+F F(
+""B
+configuration.ConfigXMLHX
+=======
 ;configuration.ConfigXML#getDatabaseNode()Ljava/lang/String;X
 LC:/Users/user/git/Rides24Complete/src/main/java/configuration/ConfigXML.java§ §("1*°
 1
@@ -16,3 +24,4 @@ u
 
 %0java.lang.StringB
 configuration.ConfigXMLH
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#deleteDiscount(LDiscount;)V
+=======
 gui.AlertakKudeatuGUI#<init>(Ljava/lang/String;)V
 javax.swing.JTable#<init>()V
 java.text.SimpleDateFormat#instance-init#
@@ -51,3 +54,4 @@ getColumn javax.swing.table.TableColumnModel#getColumn(I)Ljavax/swing/table/Tabl
 add java.awt.Container#add(Ljava/awt/Component;)Ljava/awt/Component;
 setTitle java.awt.Frame#setTitle(Ljava/lang/String;)V
 addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
+>>>>>>> refs/remotes/Rides24Complete/master

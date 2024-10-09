@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+domain.User#setBalorazioa(D)V
+=======
 gui.DeskontuaGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
 setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

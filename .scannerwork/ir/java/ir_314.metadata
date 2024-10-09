@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Alert#isFound()Z
+=======
 domain.Booking#<init>(Ldomain/Ride;LTraveler;I)V
+>>>>>>> refs/remotes/Rides24Complete/master

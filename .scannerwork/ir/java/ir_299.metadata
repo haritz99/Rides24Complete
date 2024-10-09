@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+gui.KotxeakKudeatuGUI#setBussinessLogic(LBLFacade;)V
+=======
 gui.ArazoaGUI#<init>(Ljava/lang/String;Ljava/lang/String;Ldomain/Booking;)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 javax.swing.JButton#<init>()V
@@ -25,3 +28,4 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 setContentPane javax.swing.JFrame#setContentPane(Ljava/awt/Container;)V
 setBounds java.awt.Component#setBounds(IIII)V
 setForeground javax.swing.JComponent#setForeground(Ljava/awt/Color;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+domain.Driver#equals(Ljava/lang/Object;)Z
+==
+equals java.lang.Object#equals(Ljava/lang/Object;)Z
+=======
 gui.DeskontuKudeatuGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
 setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

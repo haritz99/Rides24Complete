@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.User#getMota()Ljava/lang/String;
+=======
 domain.User#setErreklamaKop(I)V
+>>>>>>> refs/remotes/Rides24Complete/master

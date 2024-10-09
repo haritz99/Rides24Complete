@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Ride#setDate(Ljava/util/Date;)V
+=======
 domain.Alert#setFrom(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

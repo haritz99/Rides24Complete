@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Booking#getComplaint()Ldomain/Complaint;
+=======
 domain.Complaint#setAurkeztua(Ljava/lang/Boolean;)V
+>>>>>>> refs/remotes/Rides24Complete/master

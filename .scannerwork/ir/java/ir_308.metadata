@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+domain.Alert#getTo()Ljava/lang/String;
+=======
 gui.MainGUI#instance-init#
 javax.swing.ButtonGroup#instance-init#
 javax.swing.ButtonGroup#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

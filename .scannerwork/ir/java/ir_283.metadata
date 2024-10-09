@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Ride#setTo(Ljava/lang/String;)V
+=======
 domain.Alert#setAlertNumber(Ljava/lang/Integer;)V
+>>>>>>> refs/remotes/Rides24Complete/master

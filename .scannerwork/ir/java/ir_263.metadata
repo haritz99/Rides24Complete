@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Movement#<init>(LUser;Ljava/lang/String;D)V
+=======
 domain.Ride#setDate(Ljava/util/Date;)V
+>>>>>>> refs/remotes/Rides24Complete/master

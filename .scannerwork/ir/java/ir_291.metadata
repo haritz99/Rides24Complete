@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Ride#setPrice(D)V
+=======
 domain.Alert#setTraveler(LTraveler;)V
+>>>>>>> refs/remotes/Rides24Complete/master

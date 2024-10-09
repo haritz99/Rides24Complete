@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+domain.Car#<init>(Ljava/lang/String;Ljava/lang/String;I)V
+==
+<init> java.lang.Object#<init>()V
+=======
 gui.KotxeaGehituGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
 setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

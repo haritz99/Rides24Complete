@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+domain.Complaint#setDeskripzioa(Ljava/lang/String;)V
+=======
 domain.Admin2#<init>(Ljava/lang/String;Ljava/lang/String;)V
 ==
 setMota domain.Admin2#setMota(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

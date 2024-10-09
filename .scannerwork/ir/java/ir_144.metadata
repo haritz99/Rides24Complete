@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.MovementsGUI#getBusinessLogic()LBLFacade;
+=======
 gui.EgoeraGUI#getBusinessLogic()LBLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master

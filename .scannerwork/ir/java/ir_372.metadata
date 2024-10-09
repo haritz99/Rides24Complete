@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Complaint#getNoiz()Ljava/util/Date;
+=======
 configuration.ConfigXML#isDatabaseInitialized()Z
+>>>>>>> refs/remotes/Rides24Complete/master

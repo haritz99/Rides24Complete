@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+testOperations.TestBusinessLogic#existDriver(Ljava/lang/String;)Z
+=======
 exceptions.RideAlreadyExistException#<init>()V
 ==
 <init> java.lang.Exception#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

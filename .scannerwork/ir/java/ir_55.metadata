@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+testOperations.TestDataAccess#existDriver(Ljava/lang/String;)Z
+=======
 exceptions.RideMustBeLaterThanTodayException#<init>()V
 ==
 <init> java.lang.Exception#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

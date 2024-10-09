@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+testOperations.TestBusinessLogic#instance-init#
+=======
 gui.BezeroGUI#setBussinessLogic(LBLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

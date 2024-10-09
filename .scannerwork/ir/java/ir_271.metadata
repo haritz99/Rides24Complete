@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.KotxeaGehituGUI#instance-init#
+=======
 domain.Ride#setBookings(Ljava/util/List;)V
+>>>>>>> refs/remotes/Rides24Complete/master

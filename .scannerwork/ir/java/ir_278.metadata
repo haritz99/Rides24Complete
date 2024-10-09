@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+domain.Ride#getRideNumber()Ljava/lang/Integer;
+=======
 gui.KotxeakKudeatuGUI#<init>(Ljava/lang/String;)V
 gui.DriverGUI#getBusinessLogic()LBLFacade;
 javax.swing.JTable#<init>()V
@@ -35,3 +38,4 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+>>>>>>> refs/remotes/Rides24Complete/master

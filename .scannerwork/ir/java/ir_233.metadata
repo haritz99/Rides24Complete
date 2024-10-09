@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#getAlertsByUsername(Ljava/lang/String;)Ljava/util/List;
+=======
 domain.Car#setDriver(LDriver;)V
+>>>>>>> refs/remotes/Rides24Complete/master

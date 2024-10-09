@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+gui.BaloraGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
+=======
 domain.Driver#equals(Ljava/lang/Object;)Z
 ==
 equals domain.User#equals(Ljava/lang/Object;)Z
+>>>>>>> refs/remotes/Rides24Complete/master

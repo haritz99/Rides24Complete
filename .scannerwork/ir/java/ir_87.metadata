@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+domain.Driver#getCars()Ljava/util/List;
+=======
 gui.ErreserbaOnartuGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
 setVisible java.awt.Window#setVisible(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

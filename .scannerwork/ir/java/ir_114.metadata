@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+domain.User#getBalorazioa()D
+=======
 gui.DeskontuaGUI#<init>(Ljava/lang/String;)V
 javax.swing.JLabel#<init>(Ljava/lang/String;)V
 javax.swing.JTextField#instance-init#
@@ -20,3 +23,4 @@ getContentPane javax.swing.JFrame#getContentPane()Ljava/awt/Container;
 setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 setBounds java.awt.Component#setBounds(IIII)V
+>>>>>>> refs/remotes/Rides24Complete/master

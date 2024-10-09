@@ -1,40 +1,0 @@
-
-)domain.Driver#equals(Ljava/lang/Object;)ZL
-BC:/Users/user/git/Rides24Complete/src/main/java/domain/Driver.javaV V("startingBlock*Ñ
-startingBlockV V("ä
-á
-U U(
-
-%1"
-__annotate*2
-
-__unknown_file (
-java.lang.Override*5
-
-__unknown_file (
-
-objjava.lang.ObjectW
-U
-V V(!
-objjava.lang.Object"__annotation*"
-
-__unknown_file (
-
-%1*
-1*ƒ
-1W	 W(†
-ù
-W	 W(
-%0boolean"'domain.User#equals(Ljava/lang/Object;)Z*"
-
-__unknown_file (
-""*5
-
-__unknown_file (
-
-objjava.lang.Object"
-W W(
-"":#
-V V(!
-objjava.lang.ObjectB
-domain.DriverHX

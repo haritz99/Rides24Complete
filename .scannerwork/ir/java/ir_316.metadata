@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Alert#isActive()Z
+=======
 domain.Booking#setBookNumber(I)V
+>>>>>>> refs/remotes/Rides24Complete/master

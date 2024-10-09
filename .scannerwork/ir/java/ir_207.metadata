@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#gauzatuEragiketa(Ljava/lang/String;DZ)Z
+=======
 businessLogic.BLFacadeImplementation#deleteDiscount(LDiscount;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+exceptions.RideMustBeLaterThanTodayException#<init>()V
+==
+<init> java.lang.Exception#<init>()V
+=======
 gui.BaloraGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+gui.DeskontuaGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+=======
 gui.DriverGUI#getBusinessLogic()LBLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master

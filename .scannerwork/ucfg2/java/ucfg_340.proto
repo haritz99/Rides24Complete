@@ -1,4 +1,17 @@
 
+<<<<<<< HEAD
+5configuration.ConfigXML#getLocale()Ljava/lang/String;Y
+OC:/Users/Ikaslea/git/Rides24Complete/src/main/java/configuration/ConfigXML.java1 1("1*¤
+12	 2(o
+m
+2	 2(
+%0java.lang.String"__id*C
+
+__unknown_file ('*%
+configuration.ConfigXML"
+locale"$
+2 2(
+=======
 @configuration.ConfigXML#getBusinessLogicNode()Ljava/lang/String;X
 LC:/Users/user/git/Rides24Complete/src/main/java/configuration/ConfigXML.java“ “(#"1*µ
 1
@@ -13,6 +26,7 @@ z
 businessLogicNode"&
 
 ” ”(
+>>>>>>> refs/remotes/Rides24Complete/master
 
 %0java.lang.StringB
 configuration.ConfigXMLH

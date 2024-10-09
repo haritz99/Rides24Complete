@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+gui.MovementsGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+=======
 gui.EgoeraGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
 ==
+>>>>>>> refs/remotes/Rides24Complete/master
 setVisible java.awt.Window#setVisible(Z)V

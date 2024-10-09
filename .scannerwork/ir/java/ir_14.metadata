@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#getMotabyUsername(Ljava/lang/String;)Ljava/lang/String;
 ==
 isEmpty java.util.List#isEmpty()Z
+=======
+dataAccess.DataAccess#getMotabyUsername(Ljava/lang/String;)Ljava/lang/String;
+==
+isEmpty java.util.List#isEmpty()Z
+>>>>>>> refs/remotes/Rides24Complete/master
 get java.util.List#get(I)Ljava/lang/Object;

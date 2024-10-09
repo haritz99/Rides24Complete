@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+domain.Discount#setKodea(Ljava/lang/String;)V
+=======
 domain.Driver#toString()Ljava/lang/String;
 ==
 toString domain.User#toString()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

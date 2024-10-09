@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+dataAccess.ObjectdbManagerServer#instance-init#
+javax.swing.JPanel#<init>()V
+javax.swing.JPanel#instance-init#
+=======
 gui.FindRidesGUI#paintDaysWithEvents(LJCalendar;Ljava/util/List;Ljava/awt/Color;)V
 java.util.Calendar#setTime(Ljava/util/Date;)V
 ==
 setBackground java.awt.Component#setBackground(Ljava/awt/Color;)V
 set java.util.Calendar#set(II)V
 get java.util.Calendar#get(I)I
+>>>>>>> refs/remotes/Rides24Complete/master

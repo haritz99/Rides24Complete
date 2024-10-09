@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Ride#setnPlaces(I)V
+=======
 domain.Alert#setActive(Z)V
+>>>>>>> refs/remotes/Rides24Complete/master

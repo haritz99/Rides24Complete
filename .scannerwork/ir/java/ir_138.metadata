@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+gui.DriverGUI#instance-init#
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+javax.swing.JButton#<init>(Ljava/lang/String;)V
+javax.swing.JButton#instance-init#
+=======
 gui.BidaiakKudeatuGUI#<init>(Ljava/lang/String;)V
 gui.BidaiakKudeatuGUI#setBussinessLogic(LBLFacade;)V
 gui.DriverGUI#getBusinessLogic()LBLFacade;
@@ -39,3 +46,4 @@ setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swi
 getDate domain.Ride#getDate()Ljava/util/Date;
 getFrom domain.Ride#getFrom()Ljava/lang/String;
 getTo domain.Ride#getTo()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

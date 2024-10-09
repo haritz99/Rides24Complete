@@ -1,66 +1,0 @@
-
-QbusinessLogic.BLFacadeImplementation#bookRide(Ljava/lang/String;Ldomain/Ride;ID)Ze
-YC:/Users/user/git/Rides24Complete/src/main/java/businessLogic/BLFacadeImplementation.java× ×("startingBlock*ö
-startingBlock
-× ×(L‘
-Ž
-
-Ö Ö(
-
-%0"
-__annotate*2
-
-__unknown_file (
-java.lang.Override*:
-
-__unknown_file (
-
-usernamejava.lang.String^
-\
-
-×  ×((
-usernamejava.lang.String"__annotation*"
-
-__unknown_file (
-
-%0ˆ
-…
-
-Ö Ö(
-
-%1"
-__annotate*2
-
-__unknown_file (
-java.lang.Override*1
-
-__unknown_file (
-
-ridedomain.RideU
-S
-
-×/ ×(3
-ridedomain.Ride"__annotation*"
-
-__unknown_file (
-
-%1*
-1*%
-1
-Ø Ø("
-
-Ü Ü(
-"":*
-
-× ×()
-usernamejava.lang.String:!
-
-×* ×(4
-ridedomain.Ride: 
-
-__unknown_file (
-"": 
-
-__unknown_file (
-""B(&
-$businessLogic.BLFacadeImplementationHX

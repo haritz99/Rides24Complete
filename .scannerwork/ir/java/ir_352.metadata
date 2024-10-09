@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.ErreklamazioakGUI#instance-init#
+=======
 domain.Complaint#setEgoera(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

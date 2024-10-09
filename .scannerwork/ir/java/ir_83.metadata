@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Driver#<init>(Ljava/lang/String;Ljava/lang/String;)V
+=======
 gui.ErreserbaOnartuGUI#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

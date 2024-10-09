@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.ErreserbaOnartuGUI#setBussinessLogic(LBLFacade;)V
+=======
 domain.User#setPassword(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

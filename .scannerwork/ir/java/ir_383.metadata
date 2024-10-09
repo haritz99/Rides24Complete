@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+gui.MoneyGUI#getBusinessLogic()LBLFacade;
+=======
 gui.AlertaSortuGUI#instance-init#
 null
 javax.swing.JLabel#<init>(Ljava/lang/String;)V
@@ -11,3 +14,4 @@ javax.swing.JScrollPane#instance-init#
 javax.swing.JLabel#<init>()V
 javax.swing.JButton#instance-init#
 javax.swing.JScrollPane#<init>()V
+>>>>>>> refs/remotes/Rides24Complete/master

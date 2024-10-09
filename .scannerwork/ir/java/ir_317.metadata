@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Alert#setActive(Z)V
+=======
 domain.Booking#getRide()Ldomain/Ride;
+>>>>>>> refs/remotes/Rides24Complete/master

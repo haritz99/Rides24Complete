@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.ArazoaGUI#instance-init#
+=======
 domain.Booking#setRide(Ldomain/Ride;)V
+>>>>>>> refs/remotes/Rides24Complete/master

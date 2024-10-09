@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Driver#getCreatedRides()Ljava/util/List;
+=======
 gui.ErreserbaOnartuGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

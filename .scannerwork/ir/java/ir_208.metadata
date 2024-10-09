@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#bookRide(Ljava/lang/String;LRide;ID)Z
+=======
 businessLogic.BLFacadeImplementation#updateDiscount(LDiscount;)V
+>>>>>>> refs/remotes/Rides24Complete/master

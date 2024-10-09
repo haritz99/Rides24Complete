@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+gui.DriverGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+=======
 dataAccess.ObjectdbManagerServer#instance-init#
 javax.swing.JPanel#<init>()V
 javax.swing.JPanel#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

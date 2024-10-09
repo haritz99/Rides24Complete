@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+gui.FindRidesGUI#jButton2_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+=======
 businessLogic.BLFacadeImplementation#getTraveler(Ljava/lang/String;)LTraveler;
+>>>>>>> refs/remotes/Rides24Complete/master

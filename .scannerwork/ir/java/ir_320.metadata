@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.ArazoaGUI#setBussinessLogic(LBLFacade;)V
+=======
 domain.Booking#setTraveler(LTraveler;)V
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,105 +1,0 @@
-
-ÜbusinessLogic.BLFacadeImplementation#createRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IFLjava/lang/String;)Ldomain/Ride;c
-YC:/Users/user/git/Rides24Complete/src/main/java/businessLogic/BLFacadeImplementation.javaS S("startingBlock*ô
-startingBlockS S(gÅ
-
-R R(
-%0"
-__annotate*)
-
-__unknown_file (
-	WebMethod*6
-
-__unknown_file (
-
-fromjava.lang.StringX
-V
-S S(#
-fromjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%0
-}
-R R(
-%1"
-__annotate*)
-
-__unknown_file (
-	WebMethod*4
-
-__unknown_file (
-
-tojava.lang.StringV
-T
-S, S(.
-tojava.lang.String"__annotation*"
-
-__unknown_file (
-
-%1
-}
-R R(
-%2"
-__annotate*)
-
-__unknown_file (
-	WebMethod*4
-
-__unknown_file (
-
-datejava.util.DateV
-T
-S5 S(9
-datejava.util.Date"__annotation*"
-
-__unknown_file (
-
-%2à
-Ö
-R R(
-%3"
-__annotate*)
-
-__unknown_file (
-	WebMethod*<
-
-__unknown_file ( 
-
-
-driverNamejava.lang.String^
-\
-S\ S(f
-
-driverNamejava.lang.String"__annotation*"
-
-__unknown_file (
-
-%3*
-1*}
-1V V(K
-I
-W W(O
-ridedomain.Ride"__id*"
-
-__unknown_file (
-"""!
-Y Y(
-
-ridedomain.Ride:$
-S S($
-fromjava.lang.String:"
-S% S(/
-tojava.lang.String:"
-S0 S(:
-datejava.util.Date: 
-
-__unknown_file (
-"": 
-
-__unknown_file (
-"":*
-SU S(f
-
-driverNamejava.lang.StringB(&
-$businessLogic.BLFacadeImplementationH

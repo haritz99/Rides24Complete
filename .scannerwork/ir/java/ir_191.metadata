@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#<init>(LDataAccess;)V
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
+=======
 businessLogic.BLFacadeImplementation#getBookedRides(Ljava/lang/String;)Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

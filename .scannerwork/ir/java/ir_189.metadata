@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#instance-init#
+=======
 businessLogic.BLFacadeImplementation#getAllMovements(LUser;)Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

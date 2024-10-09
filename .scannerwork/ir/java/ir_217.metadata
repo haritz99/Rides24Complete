@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#getBookingFromDriver(Ljava/lang/String;)Ljava/util/List;
+=======
 businessLogic.BLFacadeImplementation#createAlert(Ldomain/Alert;)Z
+>>>>>>> refs/remotes/Rides24Complete/master

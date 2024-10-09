@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+gui.RegisterGUI#getBusinessLogic()LBLFacade;
+=======
 gui.MovementsGUI#<init>(Ljava/lang/String;)V
 javax.swing.JTable#<init>()V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
@@ -32,3 +35,4 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
 setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+>>>>>>> refs/remotes/Rides24Complete/master

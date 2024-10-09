@@ -1,1 +1,10 @@
+<<<<<<< HEAD
+testOperations.TestDataAccess#removeRide(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)LRide;
+==
+println java.io.PrintStream#println([C)V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+removeRide domain.Driver#removeRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)LRide;
+getCreatedRides domain.Driver#getCreatedRides()Ljava/util/List;
+=======
 domain.Discount#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

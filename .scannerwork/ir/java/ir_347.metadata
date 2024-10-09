@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Booking#getDeskontua()D
+=======
 domain.Complaint#getBooking()LBooking;
+>>>>>>> refs/remotes/Rides24Complete/master

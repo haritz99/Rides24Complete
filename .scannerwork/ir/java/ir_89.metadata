@@ -1,1 +1,6 @@
+<<<<<<< HEAD
+domain.Driver#addRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IF)LRide;
+null
+=======
 gui.DeskontuKudeatuGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
+>>>>>>> refs/remotes/Rides24Complete/master

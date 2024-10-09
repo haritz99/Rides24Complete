@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#addMovement(LUser;Ljava/lang/String;D)V
+=======
 businessLogic.BLFacadeImplementation#deleteCar(Ldomain/Car;)V
+>>>>>>> refs/remotes/Rides24Complete/master

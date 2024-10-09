@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#updateTraveler(LTraveler;)V
+=======
 businessLogic.BLFacadeImplementation#getAlertsByUsername(Ljava/lang/String;)Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Booking#setComplaint(Ldomain/Complaint;)V
+=======
 domain.Complaint#getEgoera()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

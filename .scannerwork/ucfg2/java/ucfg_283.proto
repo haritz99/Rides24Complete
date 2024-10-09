@@ -1,4 +1,20 @@
 
+<<<<<<< HEAD
+,domain.Booking#getStatus()Ljava/lang/String;P
+FC:/Users/Ikaslea/git/Rides24Complete/src/main/java/domain/Booking.javaE E("1*›
+1F	 F(f
+d
+F	 F(
+%0java.lang.String"__id*:
+
+__unknown_file (*
+domain.Booking"
+status"$
+F F(
+
+%0java.lang.StringB
+domain.BookingH
+=======
 Sconfiguration.UtilDate#datesAreEqualIgnoringTime(Ljava/util/Date;Ljava/util/Date;)ZU
 KC:/Users/user/git/Rides24Complete/src/main/java/configuration/UtilDate.java< <(0"5*…
 2C C(B
@@ -218,3 +234,4 @@ d
 <= <(G
 date2java.util.DateB"
 configuration.UtilDateHX
+>>>>>>> refs/remotes/Rides24Complete/master

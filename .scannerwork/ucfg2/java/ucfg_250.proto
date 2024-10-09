@@ -1,4 +1,20 @@
 
+<<<<<<< HEAD
+0domain.Alert#getAlertNumber()Ljava/lang/Integer;N
+DC:/Users/Ikaslea/git/Rides24Complete/src/main/java/domain/Alert.java$ $("1* 
+1%	 %(j
+h
+%	 %(
+%0java.lang.Integer"__id*=
+
+__unknown_file (!*
+domain.Alert"
+alertNumber"%
+% %(
+
+%0java.lang.IntegerB
+domain.AlertH
+=======
 domain.Ride#getPrice()DL
 @C:/Users/user/git/Rides24Complete/src/main/java/domain/Ride.java ("1*%
 1
@@ -7,3 +23,4 @@
 Ÿ Ÿ(
 ""B
 domain.RideHX
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#getRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
 java.util.ArrayList#<init>()V
 ==
+=======
+dataAccess.DataAccess#getRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+java.util.ArrayList#<init>()V
+==
+>>>>>>> refs/remotes/Rides24Complete/master
 println java.io.PrintStream#println(Ljava/lang/String;)V

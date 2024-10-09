@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#getBookedRides(Ljava/lang/String;)Ljava/util/List;
+=======
 businessLogic.BLFacadeImplementation#getUserList()Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+businessLogic.BLFacadeImplementation#updateBooking(LBooking;)V
+=======
 businessLogic.BLFacadeImplementation#updateAlertaAurkituak(Ljava/lang/String;)Z
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+gui.BaloraGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+=======
 domain.Driver#bilatumatrikula(Ljava/lang/String;)LCar;
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.AdminGUI#instance-init#
+=======
 domain.Movement#getId()I
+>>>>>>> refs/remotes/Rides24Complete/master

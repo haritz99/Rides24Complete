@@ -1,1 +1,36 @@
+<<<<<<< HEAD
+gui.KotxeaGehituGUI#<init>(Ljava/lang/String;)V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+javax.swing.JPanel#<init>()V
+javax.swing.JButton#<init>(Ljava/lang/String;)V
+gui.KotxeaGehituGUI#setBussinessLogic(LBLFacade;)V
+javax.swing.border.EmptyBorder#instance-init#
+javax.swing.JLabel#<init>()V
+javax.swing.JPanel#instance-init#
+java.awt.Dimension#<init>(II)V
+javax.swing.border.EmptyBorder#<init>(IIII)V
+javax.swing.JLabel#<init>(Ljava/lang/String;)V
+javax.swing.JTextField#instance-init#
+javax.swing.JTextField#<init>()V
+gui.MainGUI#getBusinessLogic()LBLFacade;
+java.awt.Dimension#instance-init#
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+javax.swing.JLabel#instance-init#
+javax.swing.JButton#instance-init#
+==
+setColumns javax.swing.JTextField#setColumns(I)V
+getContentPane javax.swing.JFrame#getContentPane()Ljava/awt/Container;
+setResizable java.awt.Frame#setResizable(Z)V
+setBounds java.awt.Component#setBounds(IIII)V
+setSize java.awt.Window#setSize(Ljava/awt/Dimension;)V
+setDefaultCloseOperation javax.swing.JFrame#setDefaultCloseOperation(I)V
+setBorder javax.swing.JComponent#setBorder(Ljavax/swing/border/Border;)V
+setBounds java.awt.Window#setBounds(IIII)V
+add java.awt.Container#add(Ljava/awt/Component;)Ljava/awt/Component;
+setTitle java.awt.Frame#setTitle(Ljava/lang/String;)V
+setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
+setContentPane javax.swing.JFrame#setContentPane(Ljava/awt/Container;)V
+addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
+=======
 domain.Ride#isActive()Z
+>>>>>>> refs/remotes/Rides24Complete/master

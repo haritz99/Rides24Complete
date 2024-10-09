@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+gui.EgoeraGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+=======
 gui.TravelerGUI#<init>(Ljava/lang/String;)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 javax.swing.JButton#<init>()V
@@ -31,3 +36,4 @@ addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/A
 setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 setContentPane javax.swing.JFrame#setContentPane(Ljava/awt/Container;)V
 setForeground javax.swing.JComponent#setForeground(Ljava/awt/Color;)V
+>>>>>>> refs/remotes/Rides24Complete/master

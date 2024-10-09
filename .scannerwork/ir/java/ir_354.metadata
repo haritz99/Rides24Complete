@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.ErreklamazioakGUI#setBussinessLogic(LBLFacade;)V
+=======
 gui.MoneyGUI#getBusinessLogic()LBLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master

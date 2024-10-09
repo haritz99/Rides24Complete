@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Discount#isActive()Z
+=======
 domain.Driver#getCars()Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

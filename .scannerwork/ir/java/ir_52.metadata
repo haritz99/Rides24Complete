@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+testOperations.TestDataAccess#open()V
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+println java.io.PrintStream#println(Ljava/lang/String;)V
+=======
 gui.EzabatuGUI#<init>()V
 gui.EzabatuGUI#setBussinessLogic(LbusinessLogic/BLFacade;)V
 javax.swing.JTable#<init>()V
@@ -38,3 +46,4 @@ addRow javax.swing.table.DefaultTableModel#addRow([Ljava/lang/Object;)V
 addActionListener javax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V
 getUserList businessLogic.BLFacade#getUserList()Ljava/util/List;
 setDefaultEditor javax.swing.JTable#setDefaultEditor(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V
+>>>>>>> refs/remotes/Rides24Complete/master

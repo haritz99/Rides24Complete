@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+CreateRideBDWhiteTest#<init>()V
+=======
 configuration.ConfigXML#getUser()Ljava/lang/String;
+>>>>>>> refs/remotes/Rides24Complete/master

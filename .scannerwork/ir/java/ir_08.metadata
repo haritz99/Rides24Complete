@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 dataAccess.DataAccess#close()V
 ==
+=======
+dataAccess.DataAccess#close()V
+==
+>>>>>>> refs/remotes/Rides24Complete/master
 println java.io.PrintStream#println(Ljava/lang/String;)V

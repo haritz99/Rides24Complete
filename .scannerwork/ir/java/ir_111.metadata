@@ -1,2 +1,6 @@
+<<<<<<< HEAD
+domain.User#setMota(Ljava/lang/String;)V
+=======
 domain.User#equals(Ljava/lang/Object;)Z
 java.lang.Object#getClass()Ljava/lang/Class;
+>>>>>>> refs/remotes/Rides24Complete/master

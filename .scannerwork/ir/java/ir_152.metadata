@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+gui.ApplicationLauncher#instance-init#
+=======
 gui.BezeroGUI#instance-init#
+>>>>>>> refs/remotes/Rides24Complete/master

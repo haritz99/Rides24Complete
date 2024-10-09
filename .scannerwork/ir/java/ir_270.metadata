@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Movement#setKopurua(D)V
+=======
 domain.Ride#getBookings()Ljava/util/List;
+>>>>>>> refs/remotes/Rides24Complete/master

@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+domain.Alert#setDate(Ljava/util/Date;)V
+=======
 gui.MainGUI#<init>()V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
 javax.swing.JButton#<init>()V
@@ -27,3 +30,4 @@ setLayout java.awt.Container#setLayout(Ljava/awt/LayoutManager;)V
 setContentPane javax.swing.JFrame#setContentPane(Ljava/awt/Container;)V
 addWindowListener java.awt.Window#addWindowListener(Ljava/awt/event/WindowListener;)V
 setForeground javax.swing.JComponent#setForeground(Ljava/awt/Color;)V
+>>>>>>> refs/remotes/Rides24Complete/master

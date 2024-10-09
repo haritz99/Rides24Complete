@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+domain.Driver#toString()Ljava/lang/String;
+==
+toString java.lang.Object#toString()Ljava/lang/String;
+=======
 gui.ErreserbaOnartuGUI#getBusinessLogic()LbusinessLogic/BLFacade;
+>>>>>>> refs/remotes/Rides24Complete/master

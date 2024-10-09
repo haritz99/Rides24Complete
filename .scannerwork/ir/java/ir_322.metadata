@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+gui.ArazoaGUI#jButtonClose_actionPerformed(Ljava/awt/event/ActionEvent;)V
+==
+setVisible java.awt.Window#setVisible(Z)V
+=======
 domain.Booking#setSeats(I)V
+>>>>>>> refs/remotes/Rides24Complete/master

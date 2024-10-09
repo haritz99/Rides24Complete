@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+testOperations.TestDataAccess#existRide(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Z
+==
+doesRideExists domain.Driver#doesRideExists(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Z
+println java.io.PrintStream#println(Ljava/lang/String;)V
+=======
 exceptions.RideMustBeLaterThanTodayException#<init>(Ljava/lang/String;)V
 ==
 <init> java.lang.Exception#<init>(Ljava/lang/String;)V
+>>>>>>> refs/remotes/Rides24Complete/master

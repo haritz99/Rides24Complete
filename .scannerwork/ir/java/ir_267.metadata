@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+domain.Movement#getEragiketa()Ljava/lang/String;
+=======
 domain.Ride#setDriver(LDriver;)V
+>>>>>>> refs/remotes/Rides24Complete/master

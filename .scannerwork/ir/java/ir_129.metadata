@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+gui.LoginGUI#getBusinessLogic()LBLFacade;
+=======
 gui.DriverGUI#<init>(Ljava/lang/String;)V
 javax.swing.JLabel#<init>(Ljava/lang/String;)V
 java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
@@ -23,3 +26,4 @@ setContentPane javax.swing.JFrame#setContentPane(Ljava/awt/Container;)V
 setResizable java.awt.Frame#setResizable(Z)V
 setBounds java.awt.Component#setBounds(IIII)V
 setForeground javax.swing.JComponent#setForeground(Ljava/awt/Color;)V
+>>>>>>> refs/remotes/Rides24Complete/master
