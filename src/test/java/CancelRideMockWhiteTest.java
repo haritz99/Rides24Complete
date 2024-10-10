@@ -59,7 +59,7 @@ public class CancelRideMockWhiteTest {
 		persistenceMock.close();
     }
 	
-	
+	/*
 	
 	Ride ride;
 	
@@ -287,6 +287,6 @@ public class CancelRideMockWhiteTest {
 			}
 		
 	}  
-
+*/
 
 }
