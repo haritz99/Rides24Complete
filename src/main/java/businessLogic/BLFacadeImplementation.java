@@ -11,6 +11,7 @@ import dataAccess.DataAccess;
 import domain.Ride;
 import domain.Traveler;
 import domain.User;
+import domain.ValoresViaje;
 //import domain.Admin;
 import domain.Alert;
 import domain.Booking;
@@ -84,7 +85,8 @@ public class BLFacadeImplementation implements BLFacade {
 			throws RideMustBeLaterThanTodayException, RideAlreadyExistException {
 
 		dbManager.open();
-		Ride ride = dbManager.createRide(from, to, date, nPlaces, price, driverName);
+		ValoresViaje vv = new ValoresViaje(from, to, date, nPlaces, price, driverName);
+		Ride ride = dbManager.createRide(vv);
 		dbManager.close();
 		return ride;
 	}

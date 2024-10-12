@@ -22,13 +22,14 @@ import org.mockito.MockitoAnnotations;
 
 import dataAccess.DataAccess;
 import domain.Driver;
+import domain.ValoresViaje;
 import exceptions.RideAlreadyExistException;
 import exceptions.RideMustBeLaterThanTodayException;
 
 public class CreateRideMockTest {
 	static DataAccess sut;
 	protected MockedStatic<Persistence> persistenceMock;
-	
+	ValoresViaje vv;
 	@Mock
 	protected EntityManagerFactory entityManagerFactory;
 	@Mock
@@ -74,8 +75,9 @@ public class CreateRideMockTest {
 	//equivalent to
 	//Mockito.doReturn(driver).when (db).find (Driver.class, driverUsername);
 	//invoke System Under Test (sut)
+	vv = new ValoresViaje(rideFrom,rideTo,rideDate,0,0,driverUsername);
 	sut.open();
-	sut.createRide(rideFrom,rideTo,rideDate,0,0,driverUsername);
+	sut.createRide(vv);
 	sut.close();
 	fail();
 	} catch (RideAlreadyExistException e) {
@@ -111,8 +113,9 @@ public class CreateRideMockTest {
 	//equivalent to
 	//Mockito.doReturn(driver).when (db).find (Driver.class, driverUsername);
 	//invoke System Under Test (sut)
+	vv = new ValoresViaje(rideFrom,rideTo,rideDate,0,0,driverUsername);
 	sut.open();
-	sut.createRide(rideFrom,rideTo,rideDate,0,0,driverUsername);
+	sut.createRide(vv);
 	sut.close();
 	assertTrue(true);
 	} catch (RideAlreadyExistException e) {

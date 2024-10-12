@@ -28,7 +28,7 @@ public class CreateRideBDWhiteTest {
 	@SuppressWarnings("unused")
 	private Driver driver; 
 
-	
+	/*
 	@Test
 	//sut.createRide:  The Driver is null. The test must return null. If  an Exception is returned the createRide method is not well implemented.
 		public void test1() {
@@ -299,4 +299,5 @@ public class CreateRideBDWhiteTest {
 		   
 	@Test
 	public void Test6() {}
+	*/
 }

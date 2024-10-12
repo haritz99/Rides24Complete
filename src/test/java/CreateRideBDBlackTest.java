@@ -13,6 +13,7 @@ import org.junit.Test;
 
 import dataAccess.DataAccess;
 import domain.Ride;
+import domain.ValoresViaje;
 import exceptions.RideAlreadyExistException;
 import exceptions.RideMustBeLaterThanTodayException;
 import testOperations.TestDataAccess;
@@ -28,6 +29,7 @@ public class CreateRideBDBlackTest {
 
 	@SuppressWarnings("unused")
 	private Driver driver; 
+	private ValoresViaje vv;
 
 	@Test
 	//sut.createRide:  The Driver("Driver Test") HAS  NOT one ride "from" "to" in that "date". 
@@ -41,6 +43,7 @@ public class CreateRideBDBlackTest {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Date rideDate=null;;
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,2,driverUsername);
 		try {
 			rideDate = sdf.parse("05/10/2026");
 		} catch (ParseException e) {
@@ -57,7 +60,7 @@ public class CreateRideBDBlackTest {
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -105,6 +108,7 @@ public class CreateRideBDBlackTest {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Date rideDate=null;;
+		
 		try {
 			rideDate = sdf.parse("05/10/2026");
 		} catch (ParseException e) {
@@ -112,7 +116,7 @@ public class CreateRideBDBlackTest {
 			e.printStackTrace();
 		}	
 		Ride ride=null;
-		
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,10,driverUsername);
 		testDA.open();
 		
 			testDA.createDriver(driverUsername,null);
@@ -121,7 +125,7 @@ public class CreateRideBDBlackTest {
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -173,7 +177,7 @@ public class CreateRideBDBlackTest {
 			e.printStackTrace();
 		}	
 		Ride ride=null;
-		
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,2,driverUsername);
 		testDA.open();
 		
 			testDA.createDriver(driverUsername,null);
@@ -182,7 +186,7 @@ public class CreateRideBDBlackTest {
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -228,14 +232,14 @@ public class CreateRideBDBlackTest {
 		Date rideDate=null;
 		
 		Ride ride=null;
-		
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,2,driverUsername);
 		testDA.open();
 			testDA.createDriver(driverUsername,null);
 		testDA.close();
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -286,6 +290,7 @@ public class CreateRideBDBlackTest {
 			e.printStackTrace();
 		}	
 		Ride ride=null;
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,-2,2,driverUsername);
 		
 		testDA.open();
 		
@@ -295,7 +300,7 @@ public class CreateRideBDBlackTest {
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, -2, 0, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -348,6 +353,7 @@ public class CreateRideBDBlackTest {
 			e.printStackTrace();
 		}	
 		Ride ride=null;
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,-10,driverUsername);
 		
 		testDA.open();
 		
@@ -357,7 +363,7 @@ public class CreateRideBDBlackTest {
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideTo, rideDate, 2, -10, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -410,18 +416,19 @@ public class CreateRideBDBlackTest {
 				
 				SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 				Date rideDate=null;;
+				
 				try {
 					rideDate = sdf.parse("05/10/2026");
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}	
-				
+				vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,2,driverUsername);
 				
 				
 				//invoke System Under Test (sut)  
 				sut.open();
-			    ride=sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+			    ride=sut.createRide(vv);
 
 				//verify the results
 				assertNull(ride);
@@ -457,13 +464,14 @@ public class CreateRideBDBlackTest {
 		Date rideDate=null;;
 		
 		boolean driverCreated=false;
-
+		
 		try {
 			rideDate = sdf.parse("05/10/2018");
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,2,driverUsername);
 		try {
 			
 			//define parameters
@@ -476,7 +484,7 @@ public class CreateRideBDBlackTest {
 			
 			//invoke System Under Test (sut)  
 			sut.open();
-		    sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+		    sut.createRide(vv);
 			sut.close();
 			
 			fail();
@@ -514,7 +522,7 @@ public class CreateRideBDBlackTest {
 			e.printStackTrace();
 		}	
 		Ride ride=null;
-		
+		vv = new ValoresViaje(rideFrom, rideFrom, rideDate,2,10,driverUsername);
 		testDA.open();
 		
 			testDA.createDriver(driverUsername,null);
@@ -523,7 +531,7 @@ public class CreateRideBDBlackTest {
 		try {
 			//invoke System Under Test (sut)  
 			sut.open();
-			 ride=sut.createRide(rideFrom, rideFrom, rideDate, 2, 10, driverUsername);
+			 ride=sut.createRide(vv);
 			sut.close();			
 			
 			//verify the results
@@ -579,7 +587,7 @@ public class CreateRideBDBlackTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
-		
+		vv = new ValoresViaje(rideFrom, rideTo, rideDate,2,10,driverUsername);
 		try {
 			//Check if exist this ride for this driver, and if exist, remove it.
 			
@@ -590,7 +598,7 @@ public class CreateRideBDBlackTest {
 			
 			//invoke System Under Test (sut)  
 			sut.open();
-			Ride ride=sut.createRide(rideFrom, rideTo, rideDate, 2, 10, driverUsername);
+			Ride ride=sut.createRide(vv);
 			
 
 			sut.close();
