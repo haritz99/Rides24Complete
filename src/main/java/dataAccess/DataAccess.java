@@ -512,19 +512,21 @@ public class DataAccess {
 	
 	
 	public void doDeposit(User user, double amount, boolean deposit, double currentMoney) {
-		
 		if (deposit) {
 			user.setMoney(currentMoney + amount);
 		} else {
-			if ((currentMoney - amount) < 0)
-				user.setMoney(0);
-			else
-				user.setMoney(currentMoney - amount);
+			withdrawMoney(user, amount, currentMoney);
 		}
+			
 	}
 	
-	public void withDraw(User user, double amount, boolean deposit, double currentMoney) {
-		
+	public void withdrawMoney(User user, double amount, double currentMoney) {
+		if ((currentMoney - amount) < 0) {
+			user.setMoney(0);
+		}
+		else {
+			user.setMoney(currentMoney - amount);
+		}
 	}
 	
 	
