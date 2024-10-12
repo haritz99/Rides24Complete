@@ -496,14 +496,7 @@ public class DataAccess {
 			User user = getUser(username);
 			if (user != null) {
 				double currentMoney = user.getMoney();
-				if (deposit) {
-					user.setMoney(currentMoney + amount);
-				} else {
-					if ((currentMoney - amount) < 0)
-						user.setMoney(0);
-					else
-						user.setMoney(currentMoney - amount);
-				}
+				doDeposit(user, amount, deposit, currentMoney);
 				db.merge(user);
 				db.getTransaction().commit();
 				return true;
@@ -516,6 +509,26 @@ public class DataAccess {
 			return false;
 		}
 	}
+	
+	
+	public void doDeposit(User user, double amount, boolean deposit, double currentMoney) {
+		
+		if (deposit) {
+			user.setMoney(currentMoney + amount);
+		} else {
+			if ((currentMoney - amount) < 0)
+				user.setMoney(0);
+			else
+				user.setMoney(currentMoney - amount);
+		}
+	}
+	
+	public void withDraw(User user, double amount, boolean deposit, double currentMoney) {
+		
+	}
+	
+	
+	
 
 	public void addMovement(User user, String eragiketa, double amount) {
 		try {
