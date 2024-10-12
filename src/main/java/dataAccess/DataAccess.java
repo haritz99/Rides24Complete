@@ -224,38 +224,51 @@ public class DataAccess {
 	 * @throws RideAlreadyExistException         if the same ride already exists for
 	 *                                           the driver
 	 */
+	
+	
 	public Ride createRide(String from, String to, Date date, int nPlaces, float price, String driverName)
 			throws RideAlreadyExistException, RideMustBeLaterThanTodayException {
 		System.out.println(
 				">> DataAccess: createRide=> from= " + from + " to= " + to + " driver=" + driverName + " date " + date);
 		if (driverName==null) return null;
 		try {
-			if (new Date().compareTo(date) > 0) {
-				System.out.println("ppppp");
-				throw new RideMustBeLaterThanTodayException(
-						ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorRideMustBeLaterThanToday"));
-			}
-
+			validateRideDate(date);
 			db.getTransaction().begin();
 			Driver driver = db.find(Driver.class, driverName);
-			if (driver.doesRideExists(from, to, date)) {
-				db.getTransaction().commit();
-				throw new RideAlreadyExistException(
-						ResourceBundle.getBundle("Etiquetas").getString("DataAccess.RideAlreadyExist"));
-			}
+			doesRideExistInDriver(driver, from, to, date);
 			Ride ride = driver.addRide(from, to, date, nPlaces, price);
 			// next instruction can be obviated
 			db.persist(driver);
 			db.getTransaction().commit();
 
 			return ride;
-		} catch (NullPointerException e) {
+		} catch (NullPointerException e) { 
 			// TODO Auto-generated catch block
 			return null;
 		}
 		
-
 	}
+	
+	
+	
+	public void validateRideDate(Date date) throws RideMustBeLaterThanTodayException{
+		if (new Date().compareTo(date) > 0) {
+			System.out.println("ppppp");
+			throw new RideMustBeLaterThanTodayException(
+					ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorRideMustBeLaterThanToday"));
+		}
+	}
+	
+	public void doesRideExistInDriver(Driver driver, String from, String to, Date date) throws RideAlreadyExistException{
+		if (driver.doesRideExists(from, to, date)) {
+			db.getTransaction().commit();
+			throw new RideAlreadyExistException(
+					ResourceBundle.getBundle("Etiquetas").getString("DataAccess.RideAlreadyExist"));
+		}
+	}
+	
+	
+	
 
 	/**
 	 * This method retrieves the rides from two locations on a given date
