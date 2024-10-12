@@ -227,7 +227,7 @@ public class DataAccess {
 	 * @throws RideAlreadyExistException         if the same ride already exists for
 	 *                                           the driver
 	 */
-	//public Ride createRide(String from, String to, Date date, int nPlaces, float price, String driverName)
+	
 	
 	public Ride createRide(ValoresViaje vals)
 			throws RideAlreadyExistException, RideMustBeLaterThanTodayException {
@@ -261,6 +261,27 @@ public class DataAccess {
 		
 
 	}
+	
+	
+	
+	public void validateRideDate(Date date) throws RideMustBeLaterThanTodayException{
+		if (new Date().compareTo(date) > 0) {
+			System.out.println("ppppp");
+			throw new RideMustBeLaterThanTodayException(
+					ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorRideMustBeLaterThanToday"));
+		}
+	}
+	
+	public void doesRideExistInDriver(Driver driver, String from, String to, Date date) throws RideAlreadyExistException{
+		if (driver.doesRideExists(from, to, date)) {
+			db.getTransaction().commit();
+			throw new RideAlreadyExistException(
+					ResourceBundle.getBundle("Etiquetas").getString("DataAccess.RideAlreadyExist"));
+		}
+	}
+	
+	
+	
 
 	/**
 	 * This method retrieves the rides from two locations on a given date
@@ -488,14 +509,7 @@ public class DataAccess {
 			User user = getUser(username);
 			if (user != null) {
 				double currentMoney = user.getMoney();
-				if (deposit) {
-					user.setMoney(currentMoney + amount);
-				} else {
-					if ((currentMoney - amount) < 0)
-						user.setMoney(0);
-					else
-						user.setMoney(currentMoney - amount);
-				}
+				doDeposit(user, amount, deposit, currentMoney);
 				db.merge(user);
 				db.getTransaction().commit();
 				return true;
@@ -508,6 +522,28 @@ public class DataAccess {
 			return false;
 		}
 	}
+	
+	
+	public void doDeposit(User user, double amount, boolean deposit, double currentMoney) {
+		if (deposit) {
+			user.setMoney(currentMoney + amount);
+		} else {
+			withdrawMoney(user, amount, currentMoney);
+		}
+			
+	}
+	
+	public void withdrawMoney(User user, double amount, double currentMoney) {
+		if ((currentMoney - amount) < 0) {
+			user.setMoney(0);
+		}
+		else {
+			user.setMoney(currentMoney - amount);
+		}
+	}
+	
+	
+	
 
 	public void addMovement(User user, String eragiketa, double amount) {
 		try {
@@ -746,12 +782,9 @@ public class DataAccess {
 		return era;
 	}
 
-	public boolean erreklamazioaBidali(String nor, String nori, Date gaur, Booking booking, String textua,
-			boolean aurk) {
+	public boolean erreklamazioaBidali(Complaint erreklamazioa) {
 		try {
 			db.getTransaction().begin();
-
-			Complaint erreklamazioa = new Complaint(nor, nori, gaur, booking, textua, aurk);
 			db.persist(erreklamazioa);
 			db.getTransaction().commit();
 			return true;
