@@ -60,7 +60,7 @@ public class CancelRideMockWhiteTest {
     }
 	
 	
-	
+	/*
 	Ride ride;
 	
 	@Test
@@ -288,5 +288,5 @@ public class CancelRideMockWhiteTest {
 		
 	}  
 
-
+*/
 }

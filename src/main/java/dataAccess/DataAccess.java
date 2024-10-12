@@ -697,6 +697,7 @@ public class DataAccess {
 				booking.setStatus("Rejected");
 				db.merge(booking);
 			}
+			
 			ride.setActive(false);
 			db.merge(ride);
 
