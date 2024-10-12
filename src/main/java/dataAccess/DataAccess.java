@@ -766,12 +766,9 @@ public class DataAccess {
 		return era;
 	}
 
-	public boolean erreklamazioaBidali(String nor, String nori, Date gaur, Booking booking, String textua,
-			boolean aurk) {
+	public boolean erreklamazioaBidali(Complaint erreklamazioa) {
 		try {
 			db.getTransaction().begin();
-
-			Complaint erreklamazioa = new Complaint(nor, nori, gaur, booking, textua, aurk);
 			db.persist(erreklamazioa);
 			db.getTransaction().commit();
 			return true;
