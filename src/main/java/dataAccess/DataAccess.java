@@ -516,25 +516,29 @@ public class DataAccess {
 			db.getTransaction().rollback();
 		}
 	}
-
+	
+	public boolean puedoPagar(String username, Ride ride, int seats, double desk) {
+		Traveler traveler = getTraveler(username);
+		if (traveler == null) {
+			return false;
+		}
+		if (ride.getnPlaces() < seats) {
+			return false;
+		}
+		double ridePriceDesk = (ride.getPrice() - desk) * seats;
+		double availableBalance = traveler.getMoney();
+		if (availableBalance < ridePriceDesk) {
+			return false;}return true;}
 	public boolean bookRide(String username, Ride ride, int seats, double desk) {
+		boolean resultado;
 		try {
 			db.getTransaction().begin();
 
 			Traveler traveler = getTraveler(username);
-			if (traveler == null) {
-				return false;
-			}
-
-			if (ride.getnPlaces() < seats) {
-				return false;
-			}
-
 			double ridePriceDesk = (ride.getPrice() - desk) * seats;
 			double availableBalance = traveler.getMoney();
-			if (availableBalance < ridePriceDesk) {
-				return false;
-			}
+			resultado = puedoPagar(username, ride, seats, desk);
+			
 
 			Booking booking = new Booking(ride, traveler, seats);
 			booking.setTraveler(traveler);
@@ -548,7 +552,7 @@ public class DataAccess {
 			db.merge(ride);
 			db.merge(traveler);
 			db.getTransaction().commit();
-			return true;
+			return resultado;
 		} catch (Exception e) {
 			e.printStackTrace();
 			db.getTransaction().rollback();
