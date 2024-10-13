@@ -42,10 +42,7 @@ public class BezeroGUI extends JFrame {
 	final String valued = "Valued";
 	final String notDefined = "NotDefined";
 	final String etiquetas = "Etiquetas";
-
 	
-
-
 	public static BLFacade getBusinessLogic() {
 		return appFacadeInterface;
 	}
@@ -98,13 +95,10 @@ public class BezeroGUI extends JFrame {
 				case complained:
 					status = ResourceBundle.getBundle(etiquetas).getString(complained);
 					break;
-
+					
 				case valued:
 					status = ResourceBundle.getBundle(etiquetas).getString(valued);
 
-				case "valued":
-					status = ResourceBundle.getBundle("Etiquetas").getString(valued);
-					
 					break;
 				default:
 					status = ResourceBundle.getBundle(etiquetas).getString(notDefined);
@@ -127,9 +121,6 @@ public class BezeroGUI extends JFrame {
 
 				} else if (bo.getStatus().equals(completed) || bo.getStatus().equals(valued)
 						|| bo.getStatus().equals(complained)) {
-
-				} else if (bo.getStatus().equals("Completed") || bo.getStatus().equals(valued)
-						|| bo.getStatus().equals("Complained")) {
 
 					Object[] rowData = { bo.getBookNumber(), dateFormat.format(bo.getRide().getDate()),
 							bo.getTraveler().getUsername(), status, "" };
@@ -159,11 +150,8 @@ public class BezeroGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				int pos = taula.getSelectedRow();
 					Booking bo = BezeroLista.get(pos);
-
+					
 					if (bo.getStatus().equals(completed)) {
-
-					if (bo.getStatus().equals("Completed")) {
-
 						bo.setStatus(valued);
 						appFacadeInterface.updateBooking(bo);
 						JFrame a = new BaloraGUI(bo.getTraveler().getUsername());
@@ -171,10 +159,7 @@ public class BezeroGUI extends JFrame {
 
 						model.setValueAt(ResourceBundle.getBundle(etiquetas).getString(valued), pos, 3);
 					} else if (bo.getStatus().equals(ResourceBundle.getBundle(etiquetas).getString(valued))) {
-
-						model.setValueAt(ResourceBundle.getBundle("Etiquetas").getString(valued), pos, 3);
-					} else if (bo.getStatus().equals(ResourceBundle.getBundle("Etiquetas").getString(valued))) {
-
+						
 						lblErrorea.setForeground(Color.RED);
 						lblErrorea.setText(
 								ResourceBundle.getBundle(etiquetas).getString("BezeroGUI.BezeroaJadanikBaloratuta"));
@@ -186,8 +171,8 @@ public class BezeroGUI extends JFrame {
 		 if(pos == -1) {
 					lblErrorea.setForeground(Color.RED);
 					lblErrorea.setText(ResourceBundle.getBundle(etiquetas).getString("BezeroGUI.Erroraukera"));
-					}
 				}
+
 			}
 		});
 
