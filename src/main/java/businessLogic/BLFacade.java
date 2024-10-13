@@ -148,8 +148,7 @@ public interface BLFacade {
 
 	public void deleteCar(Car car);
 
-	public boolean erreklamazioaBidali(String username1, String username2, Date gaur, Booking book, String textua,
-			boolean aurk);
+	public boolean erreklamazioaBidali(Complaint erreklamazioa);
 
 	public void updateComplaint(Complaint erreklamazioa);
 

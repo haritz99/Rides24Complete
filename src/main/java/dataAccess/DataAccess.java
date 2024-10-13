@@ -30,7 +30,10 @@ public class DataAccess {
 	ConfigXML c = ConfigXML.getInstance();
 	
 	private String adminPass="admin";
-
+	
+	private static final String STATUS_ACCEPTED = "Accepted";
+	
+	
 	public DataAccess() {
 		if (c.isDatabaseInitialized()) {
 			String fileName = c.getDbFilename();
@@ -121,12 +124,12 @@ public class DataAccess {
 			Booking book4 = new Booking(ride3, traveler1, 1);
 			Booking book3 = new Booking(ride2, traveler2, 2);
 			Booking book5 = new Booking(ride5, traveler1, 1);
-
-			book1.setStatus("Accepted");
+			
+			book1.setStatus(STATUS_ACCEPTED);
 			book2.setStatus("Rejected");
-			book3.setStatus("Accepted");
-			book4.setStatus("Accepted");
-			book5.setStatus("Accepted");
+			book3.setStatus(STATUS_ACCEPTED);
+			book4.setStatus(STATUS_ACCEPTED);
+			book5.setStatus(STATUS_ACCEPTED);
 
 			db.persist(book1);
 			db.persist(book2);
@@ -224,26 +227,28 @@ public class DataAccess {
 	 * @throws RideAlreadyExistException         if the same ride already exists for
 	 *                                           the driver
 	 */
-	public Ride createRide(String from, String to, Date date, int nPlaces, float price, String driverName)
+	
+	
+	public Ride createRide(ValoresViaje vals)
 			throws RideAlreadyExistException, RideMustBeLaterThanTodayException {
 		System.out.println(
-				">> DataAccess: createRide=> from= " + from + " to= " + to + " driver=" + driverName + " date " + date);
-		if (driverName==null) return null;
+				">> DataAccess: createRide=> from= " + vals.getFrom() + " to= " + vals.getTo() + " driver=" + vals.getDriverName() + " date " + vals.getDate());
+		if (vals.getDriverName()==null) return null;
 		try {
-			if (new Date().compareTo(date) > 0) {
+			if (new Date().compareTo(vals.getDate()) > 0) {
 				System.out.println("ppppp");
 				throw new RideMustBeLaterThanTodayException(
 						ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorRideMustBeLaterThanToday"));
 			}
 
 			db.getTransaction().begin();
-			Driver driver = db.find(Driver.class, driverName);
-			if (driver.doesRideExists(from, to, date)) {
+			Driver driver = db.find(Driver.class, vals.getDriverName());
+			if (driver.doesRideExists(vals.getFrom(), vals.getTo(), vals.getDate())) {
 				db.getTransaction().commit();
 				throw new RideAlreadyExistException(
 						ResourceBundle.getBundle("Etiquetas").getString("DataAccess.RideAlreadyExist"));
 			}
-			Ride ride = driver.addRide(from, to, date, nPlaces, price);
+			Ride ride = driver.addRide(vals.getFrom(), vals.getTo(), vals.getDate(), vals.getNPlaces(), vals.getPrice());
 			// next instruction can be obviated
 			db.persist(driver);
 			db.getTransaction().commit();
@@ -256,6 +261,27 @@ public class DataAccess {
 		
 
 	}
+	
+	
+	
+	public void validateRideDate(Date date) throws RideMustBeLaterThanTodayException{
+		if (new Date().compareTo(date) > 0) {
+			System.out.println("ppppp");
+			throw new RideMustBeLaterThanTodayException(
+					ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorRideMustBeLaterThanToday"));
+		}
+	}
+	
+	public void doesRideExistInDriver(Driver driver, String from, String to, Date date) throws RideAlreadyExistException{
+		if (driver.doesRideExists(from, to, date)) {
+			db.getTransaction().commit();
+			throw new RideAlreadyExistException(
+					ResourceBundle.getBundle("Etiquetas").getString("DataAccess.RideAlreadyExist"));
+		}
+	}
+	
+	
+	
 
 	/**
 	 * This method retrieves the rides from two locations on a given date
@@ -483,14 +509,7 @@ public class DataAccess {
 			User user = getUser(username);
 			if (user != null) {
 				double currentMoney = user.getMoney();
-				if (deposit) {
-					user.setMoney(currentMoney + amount);
-				} else {
-					if ((currentMoney - amount) < 0)
-						user.setMoney(0);
-					else
-						user.setMoney(currentMoney - amount);
-				}
+				doDeposit(user, amount, deposit, currentMoney);
 				db.merge(user);
 				db.getTransaction().commit();
 				return true;
@@ -503,6 +522,28 @@ public class DataAccess {
 			return false;
 		}
 	}
+	
+	
+	public void doDeposit(User user, double amount, boolean deposit, double currentMoney) {
+		if (deposit) {
+			user.setMoney(currentMoney + amount);
+		} else {
+			withdrawMoney(user, amount, currentMoney);
+		}
+			
+	}
+	
+	public void withdrawMoney(User user, double amount, double currentMoney) {
+		if ((currentMoney - amount) < 0) {
+			user.setMoney(0);
+		}
+		else {
+			user.setMoney(currentMoney - amount);
+		}
+	}
+	
+	
+	
 
 	public void addMovement(User user, String eragiketa, double amount) {
 		try {
@@ -650,29 +691,33 @@ public class DataAccess {
 			return null;
 		}
 	}
+	
+	public void manageBooking(Booking booking) {
+		if (booking.getStatus().equals("Accepted") || booking.getStatus().equals("NotDefined")) {
+			double price = booking.prezioaKalkulatu();
+			Traveler traveler = booking.getTraveler();
+			double frozenMoney = traveler.getIzoztatutakoDirua();
+			traveler.setIzoztatutakoDirua(frozenMoney - price);
+
+			double money = traveler.getMoney();
+			traveler.setMoney(money + price);
+			db.merge(traveler);
+			db.getTransaction().commit();
+			addMovement(traveler, "BookDeny", price);
+			db.getTransaction().begin();
+		}
+	}
 
 	public void cancelRide(Ride ride) {
-		//Comentario 1
 		try {
 			db.getTransaction().begin();
 
 			for (Booking booking : ride.getBookings()) {
-				if (booking.getStatus().equals("Accepted") || booking.getStatus().equals("NotDefined")) {
-					double price = booking.prezioaKalkulatu();
-					Traveler traveler = booking.getTraveler();
-					double frozenMoney = traveler.getIzoztatutakoDirua();
-					traveler.setIzoztatutakoDirua(frozenMoney - price);
-
-					double money = traveler.getMoney();
-					traveler.setMoney(money + price);
-					db.merge(traveler);
-					db.getTransaction().commit();
-					addMovement(traveler, "BookDeny", price);
-					db.getTransaction().begin();
-				}
+				manageBooking(booking);
 				booking.setStatus("Rejected");
 				db.merge(booking);
 			}
+			
 			ride.setActive(false);
 			db.merge(ride);
 
@@ -741,12 +786,9 @@ public class DataAccess {
 		return era;
 	}
 
-	public boolean erreklamazioaBidali(String nor, String nori, Date gaur, Booking booking, String textua,
-			boolean aurk) {
+	public boolean erreklamazioaBidali(Complaint erreklamazioa) {
 		try {
 			db.getTransaction().begin();
-
-			Complaint erreklamazioa = new Complaint(nor, nori, gaur, booking, textua, aurk);
 			db.persist(erreklamazioa);
 			db.getTransaction().commit();
 			return true;
@@ -856,38 +898,46 @@ public class DataAccess {
 		TypedQuery<User> query = db.createQuery("SELECT u FROM User u", User.class);
 		return query.getResultList();
 	}
+	
+	public void deleteDriver(Driver driver) {
+		List<Ride> rl = getRidesByDriver(driver.getUsername());
+		if (rl != null) {
+			for (Ride ri : rl) {
+				cancelRide(ri);
+			}
+		}
+		//Driver d = getDriver(driver.getUsername());
+		List<Car> cl = driver.getCars();
+		if (cl != null) {
+			for (int i = cl.size() - 1; i >= 0; i--) {
+				Car ci = cl.get(i);
+				deleteCar(ci);
+			}
+		}
+	}
+	
+	public void deleteOtherUser(User us) {
+		List<Booking> lb = getBookedRides(us.getUsername());
+		if (lb != null) {
+			for (Booking li : lb) {
+				li.setStatus("Rejected");
+				li.getRide().setnPlaces(li.getRide().getnPlaces() + li.getSeats());
+			}
+		}
+		List<Alert> la = getAlertsByUsername(us.getUsername());
+		if (la != null) {
+			for (Alert lx : la) {
+				deleteAlert(lx.getAlertNumber());
+			}
+		}
+	}
 
 	public void deleteUser(User us) {
 		try {
 			if (us.getMota().equals("Driver")) {
-				List<Ride> rl = getRidesByDriver(us.getUsername());
-				if (rl != null) {
-					for (Ride ri : rl) {
-						cancelRide(ri);
-					}
-				}
-				Driver d = getDriver(us.getUsername());
-				List<Car> cl = d.getCars();
-				if (cl != null) {
-					for (int i = cl.size() - 1; i >= 0; i--) {
-						Car ci = cl.get(i);
-						deleteCar(ci);
-					}
-				}
+				deleteDriver((Driver) us);
 			} else {
-				List<Booking> lb = getBookedRides(us.getUsername());
-				if (lb != null) {
-					for (Booking li : lb) {
-						li.setStatus("Rejected");
-						li.getRide().setnPlaces(li.getRide().getnPlaces() + li.getSeats());
-					}
-				}
-				List<Alert> la = getAlertsByUsername(us.getUsername());
-				if (la != null) {
-					for (Alert lx : la) {
-						deleteAlert(lx.getAlertNumber());
-					}
-				}
+				deleteOtherUser(us);
 			}
 			db.getTransaction().begin();
 			us = db.merge(us);

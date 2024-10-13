@@ -11,6 +11,7 @@ import dataAccess.DataAccess;
 import domain.Ride;
 import domain.Traveler;
 import domain.User;
+import domain.ValoresViaje;
 //import domain.Admin;
 import domain.Alert;
 import domain.Booking;
@@ -19,6 +20,7 @@ import domain.Discount;
 import domain.Driver;
 import domain.Complaint;
 import domain.Movement;
+import domain.Complaint;
 import exceptions.RideMustBeLaterThanTodayException;
 import exceptions.RideAlreadyExistException;
 
@@ -84,7 +86,8 @@ public class BLFacadeImplementation implements BLFacade {
 			throws RideMustBeLaterThanTodayException, RideAlreadyExistException {
 
 		dbManager.open();
-		Ride ride = dbManager.createRide(from, to, date, nPlaces, price, driverName);
+		ValoresViaje vv = new ValoresViaje(from, to, date, nPlaces, price, driverName);
+		Ride ride = dbManager.createRide(vv);
 		dbManager.close();
 		return ride;
 	}
@@ -327,9 +330,9 @@ public class BLFacadeImplementation implements BLFacade {
 	}
 
 	@Override
-	public boolean erreklamazioaBidali(String nor, String nori, Date gaur, Booking book, String textua, boolean aurk) {
+	public boolean erreklamazioaBidali(Complaint erreklamazioa) {
 		dbManager.open();
-		boolean sent = dbManager.erreklamazioaBidali(nor, nori, gaur, book, textua, aurk);
+		boolean sent = dbManager.erreklamazioaBidali(erreklamazioa);
 		dbManager.close();
 		return sent;
 	}

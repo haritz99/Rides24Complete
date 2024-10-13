@@ -33,6 +33,7 @@ public class BezeroGUI extends JFrame {
 	private JButton jButtonErreklamatu;
 	private JButton jButtonClose;
 	private JScrollPane scrollPane;
+<<<<<<< HEAD
 	
 	final String completed = "Completed";
 	final String accepted = "Accepted";
@@ -42,6 +43,9 @@ public class BezeroGUI extends JFrame {
 	final String valued = "Valued";
 	final String notDefined = "NotDefined";
 	final String etiquetas = "Etiquetas";
+=======
+	private static String valued = "Valued";
+>>>>>>> branch 'master' of https://github.com/haritz99/Rides24Complete.git
 
 	public static BLFacade getBusinessLogic() {
 		return appFacadeInterface;
@@ -95,8 +99,13 @@ public class BezeroGUI extends JFrame {
 				case complained:
 					status = ResourceBundle.getBundle(etiquetas).getString(complained);
 					break;
+<<<<<<< HEAD
 				case valued:
 					status = ResourceBundle.getBundle(etiquetas).getString(valued);
+=======
+				case "valued":
+					status = ResourceBundle.getBundle("Etiquetas").getString(valued);
+>>>>>>> branch 'master' of https://github.com/haritz99/Rides24Complete.git
 					break;
 				default:
 					status = ResourceBundle.getBundle(etiquetas).getString(notDefined);
@@ -116,8 +125,13 @@ public class BezeroGUI extends JFrame {
 						model.addRow(rowData);
 						BezeroLista.add(bo);
 
+<<<<<<< HEAD
 				} else if (bo.getStatus().equals(completed) || bo.getStatus().equals(valued)
 						|| bo.getStatus().equals(complained)) {
+=======
+				} else if (bo.getStatus().equals("Completed") || bo.getStatus().equals(valued)
+						|| bo.getStatus().equals("Complained")) {
+>>>>>>> branch 'master' of https://github.com/haritz99/Rides24Complete.git
 					Object[] rowData = { bo.getBookNumber(), dateFormat.format(bo.getRide().getDate()),
 							bo.getTraveler().getUsername(), status, "" };
 					model.addRow(rowData);
@@ -146,13 +160,22 @@ public class BezeroGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				int pos = taula.getSelectedRow();
 					Booking bo = BezeroLista.get(pos);
+<<<<<<< HEAD
 					if (bo.getStatus().equals(completed)) {
+=======
+					if (bo.getStatus().equals("Completed")) {
+>>>>>>> branch 'master' of https://github.com/haritz99/Rides24Complete.git
 						bo.setStatus(valued);
 						appFacadeInterface.updateBooking(bo);
 						JFrame a = new BaloraGUI(bo.getTraveler().getUsername());
 						a.setVisible(true);
+<<<<<<< HEAD
 						model.setValueAt(ResourceBundle.getBundle(etiquetas).getString(valued), pos, 3);
 					} else if (bo.getStatus().equals(ResourceBundle.getBundle(etiquetas).getString(valued))) {
+=======
+						model.setValueAt(ResourceBundle.getBundle("Etiquetas").getString(valued), pos, 3);
+					} else if (bo.getStatus().equals(ResourceBundle.getBundle("Etiquetas").getString(valued))) {
+>>>>>>> branch 'master' of https://github.com/haritz99/Rides24Complete.git
 						lblErrorea.setForeground(Color.RED);
 						lblErrorea.setText(
 								ResourceBundle.getBundle(etiquetas).getString("BezeroGUI.BezeroaJadanikBaloratuta"));
