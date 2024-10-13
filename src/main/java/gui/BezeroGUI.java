@@ -33,6 +33,7 @@ public class BezeroGUI extends JFrame {
 	private JButton jButtonErreklamatu;
 	private JButton jButtonClose;
 	private JScrollPane scrollPane;
+	private static String valued = "Valued";
 
 	public static BLFacade getBusinessLogic() {
 		return appFacadeInterface;
@@ -86,8 +87,8 @@ public class BezeroGUI extends JFrame {
 				case "Complained":
 					status = ResourceBundle.getBundle("Etiquetas").getString("Complained");
 					break;
-				case "Valued":
-					status = ResourceBundle.getBundle("Etiquetas").getString("Valued");
+				case "valued":
+					status = ResourceBundle.getBundle("Etiquetas").getString(valued);
 					break;
 				default:
 					status = ResourceBundle.getBundle("Etiquetas").getString("NotDefined");
@@ -109,7 +110,7 @@ public class BezeroGUI extends JFrame {
 						BezeroLista.add(bo);
 					}
 
-				} else if (bo.getStatus().equals("Completed") || bo.getStatus().equals("Valued")
+				} else if (bo.getStatus().equals("Completed") || bo.getStatus().equals(valued)
 						|| bo.getStatus().equals("Complained")) {
 					Object[] rowData = { bo.getBookNumber(), dateFormat.format(bo.getRide().getDate()),
 							bo.getTraveler().getUsername(), status, "" };
@@ -141,12 +142,12 @@ public class BezeroGUI extends JFrame {
 				if (pos != -1) {
 					Booking bo = BezeroLista.get(pos);
 					if (bo.getStatus().equals("Completed")) {
-						bo.setStatus("Valued");
+						bo.setStatus(valued);
 						appFacadeInterface.updateBooking(bo);
 						JFrame a = new BaloraGUI(bo.getTraveler().getUsername());
 						a.setVisible(true);
-						model.setValueAt(ResourceBundle.getBundle("Etiquetas").getString("Valued"), pos, 3);
-					} else if (bo.getStatus().equals(ResourceBundle.getBundle("Etiquetas").getString("Valued"))) {
+						model.setValueAt(ResourceBundle.getBundle("Etiquetas").getString(valued), pos, 3);
+					} else if (bo.getStatus().equals(ResourceBundle.getBundle("Etiquetas").getString(valued))) {
 						lblErrorea.setForeground(Color.RED);
 						lblErrorea.setText(
 								ResourceBundle.getBundle("Etiquetas").getString("BezeroGUI.BezeroaJadanikBaloratuta"));
