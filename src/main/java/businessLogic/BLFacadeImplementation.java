@@ -22,6 +22,7 @@ import domain.Complaint;
 import domain.Movement;
 import domain.Complaint;
 import exceptions.RideMustBeLaterThanTodayException;
+import iterator.*;
 import exceptions.RideAlreadyExistException;
 
 /**
@@ -54,14 +55,24 @@ public class BLFacadeImplementation implements BLFacade {
 	 */
 	@WebMethod
 	public List<String> getDepartCities() {
+		List<String> departLocations = getDepartLocationsFromDB();
+		return departLocations;
+
+	}
+	
+	public ExtendedIterator<String> getDepartingCitiesIterator(){
+		List<String> departLocations = getDepartLocationsFromDB();
+		return new DepartCitiesIterator(departLocations);
+	}
+	
+	public List<String> getDepartLocationsFromDB(){
 		dbManager.open();
 
 		List<String> departLocations = dbManager.getDepartCities();
 
 		dbManager.close();
-
+		
 		return departLocations;
-
 	}
 
 	/**

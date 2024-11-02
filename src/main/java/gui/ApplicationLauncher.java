@@ -9,6 +9,7 @@ import javax.xml.ws.Service;
 
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
+import factory.BLFactory;
 import businessLogic.BLFacade;
 import businessLogic.BLFacadeImplementation;
 
@@ -28,7 +29,7 @@ public class ApplicationLauncher {
 
 			BLFacade appFacadeInterface;
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
-
+			/*
 			if (c.isBusinessLogicLocal()) {
 
 				DataAccess da = new DataAccess();
@@ -51,6 +52,9 @@ public class ApplicationLauncher {
 
 				appFacadeInterface = service.getPort(BLFacade.class);
 			}
+			*/
+			boolean isLocal = c.isBusinessLogicLocal();
+			appFacadeInterface = new BLFactory().getBusinessLogicFactory(isLocal);
 
 			MainGUI.setBussinessLogic(appFacadeInterface);
 			MainGUI a = new MainGUI();
