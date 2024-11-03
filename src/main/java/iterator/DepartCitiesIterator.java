@@ -29,7 +29,7 @@ public class DepartCitiesIterator implements ExtendedIterator{
 		}
 		//true	if there is	a	previous	element
 		public boolean hasPrevious() {
-			return position != 0;
+			return position >= 0;
 		}
 		//It	is	placed	in	the	first	element
 		public void goFirst() {
