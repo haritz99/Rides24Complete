@@ -54,29 +54,6 @@ public class ApplicationLauncher {
 				appFacadeInterface = service.getPort(BLFacade.class);
 			}
 			*/
-			boolean isLocal = c.isBusinessLogicLocal();
-			appFacadeInterface = new BLFactory().getBusinessLogicFactory(isLocal);
-			
-			ExtendedIterator<String>	i =	appFacadeInterface.getDepartingCitiesIterator();
-			String ci;
-			System.out.println("_____________________");
-			System.out.println("FROM	LAST	TO	FIRST");
-			i.goLast();	//	Go	to	last	element
-			while (i.hasPrevious())	{
-			ci =	i.previous();
-			System.out.println(ci);
-			}
-			System.out.println();
-			System.out.println("_____________________");
-			System.out.println("FROM	FIRST	TO	LAST");
-			i.goFirst();	//	Go	to	first	element
-			while (i.hasNext())	{
-			ci =	i.next();
-			System.out.println(ci);			
-			}
-			MainGUI.setBussinessLogic(appFacadeInterface);
-			MainGUI a = new MainGUI();
-			a.setVisible(true);
 
 		} catch (Exception e) {
 			// a.jLabelSelectOption.setText("Error: "+e.toString());
